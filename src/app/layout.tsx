@@ -16,7 +16,7 @@ export default function RootLayout({
   params: {locale: string};
 }>) {
   return (
-    <html lang={locale} hreflang={locale}>
+    <html lang={locale}>
       <body className={inter.className}>
         {children}
         <Analytics />
