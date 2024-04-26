@@ -1,4 +1,6 @@
 import Link from 'next/link';
+import { FaLinkedin, FaYoutube } from "react-icons/fa";
+import { FaSquareXTwitter } from "react-icons/fa6";
 
 interface IFooterProps {
 
@@ -23,6 +25,21 @@ const Footer: React.FC<IFooterProps> = () => {
 				</li>
 				<li>
 					<Link href="/contact" className="hover:underline me-4 md:me-6">Contact</Link>
+				</li>
+				<li>
+					<Link href="https://www.linkedin.com/company/revoluspace/">
+						<FaLinkedin />
+					</Link>
+				</li>
+				<li>
+					<Link href="https://www.youtube.com/@Revoluspace">
+						<FaYoutube />
+					</Link>
+				</li>
+				<li>
+					<Link href="https://twitter.com/revoluspace">
+						<FaSquareXTwitter />
+					</Link>
 				</li>
 			</ul>
 			</div>

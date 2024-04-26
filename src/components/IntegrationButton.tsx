@@ -31,7 +31,7 @@ const Button: React.FC<IButtonProps> = ({ text, integration, primary, className,
 					src={integration == 'Slack' ? "/slackLogo.png" : "/msteamLogo.png"}
 					width={20}
 					height={20}
-					className={`h-6 w-6 ${primary && integration == 'MS Teams' ? "bg-brand-white p-1 rounded-full h-7 w-7" : ""}`}
+					className={`h-6 w-6 ${primary && integration == 'MS Teams' ? "bg-brand-white p-1 rounded-full" : ""}`}
 					alt={integration == 'Slack' ? "Slack Logo" : "MSteam logo"}
 				/>
 				<p>{text} <span className='font-semibold'>{integration ? integration : ""}</span></p>

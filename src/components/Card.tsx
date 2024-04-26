@@ -21,11 +21,12 @@ interface ICardProps {
 	pricingCTAtext?: string;
 	seeSymbol?: boolean;
 	noImage?: boolean;
+	noborders?: boolean;
 }
 
-const PricingCard: React.FC<ICardProps> = ({ title, desc, className, price, features, nonFeatures, planFrequancy, pricingCTAtext, seeSymbol }) => {
+const PricingCard: React.FC<ICardProps> = ({ title, desc, className, price, features, nonFeatures, planFrequancy, pricingCTAtext, seeSymbol, noborders }) => {
 	return (
-		<div className={`w-full max-w-sm p-4 bg-brand-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700 ${className ? className : ""}`}>
+		<div className={`w-full max-w-sm p-4 bg-brand-white ${!noborders ? "border border-gray-200" : ""} rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700 ${className ? className : ""}`}>
 			<h5 className="mb-4 text-xl font-medium text-gray-500 dark:text-gray-400">{title ? title : "Standard Plan"}</h5>
 			<div className="flex items-baseline text-gray-900 dark:text-brand-white">
 				<span className="text-3xl font-semibold">{!seeSymbol ? "" : "€"}</span>
@@ -73,14 +74,14 @@ const TextCard: React.FC<ICardProps> = ({ title, desc, className }) => {
 	)
 }
 
-const VerCard: React.FC<ICardProps> = ({ title, desc, imgUrl, className, noImage }) => {
+const VerCard: React.FC<ICardProps> = ({ title, desc, imgUrl, className, noImage, noborders }) => {
 	
 	const splittedTitle = title.split(' ');
 	const firstWord = splittedTitle.shift();
 	title = splittedTitle.join(' ');
 
 	return (
-		<div className={`max-w-sm bg-brand-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 ${className ? className : ""}`}>
+		<div className={`max-w-sm bg-brand-white ${!noborders ? "border border-gray-200" : ""} rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 ${className ? className : ""}`}>
 			<div>
 				{
 				imgUrl && !noImage ?
@@ -106,7 +107,7 @@ const VerCard: React.FC<ICardProps> = ({ title, desc, imgUrl, className, noImage
 	)
 }
 
-const SoftCard: React.FC<ICardProps> = ({ title, desc, imgUrl, direction, className, IntegrationButtonText, IntegrationButtonLink }) => {
+const SoftCard: React.FC<ICardProps> = ({ title, desc, imgUrl, direction, className, IntegrationButtonText, IntegrationButtonLink, noborders }) => {
 
 	const splittedTitle = title.split(' ');
 	const lastWord = splittedTitle.pop();
@@ -120,7 +121,7 @@ const SoftCard: React.FC<ICardProps> = ({ title, desc, imgUrl, direction, classN
 						src={imgUrl}
 						width={300}
 						height={300}
-						className="w-5/6 lg:w-[35vw] md:h-auto md:rounded-lg border"
+						className={`w-5/6 lg:w-[35vw] md:h-auto md:rounded-lg ${!noborders ? "border border-gray-200" : ""}`}
 						alt={title}
 					/>
 				:
@@ -146,7 +147,7 @@ const SoftCard: React.FC<ICardProps> = ({ title, desc, imgUrl, direction, classN
 	)
 }
 
-const Card: React.FC<ICardProps> = ({ title, desc, imgUrl, direction, className, style, IntegrationButtonText, IntegrationButtonLink, price, features, nonFeatures, planFrequancy, pricingCTAtext, seeSymbol, noImage }) => {
+const Card: React.FC<ICardProps> = ({ title, desc, imgUrl, direction, className, style, IntegrationButtonText, IntegrationButtonLink, price, features, nonFeatures, planFrequancy, pricingCTAtext, seeSymbol, noImage,noborders }) => {
 	return (
 		style && style == 'text' ?
 			<TextCard
@@ -155,6 +156,7 @@ const Card: React.FC<ICardProps> = ({ title, desc, imgUrl, direction, className,
 				imgUrl={imgUrl}
 				direction={direction}
 				className={className}
+				noborders={noborders}
 			/>
 		:
 		style && style == 'vertical' ?
@@ -164,6 +166,7 @@ const Card: React.FC<ICardProps> = ({ title, desc, imgUrl, direction, className,
 				imgUrl={imgUrl}
 				className={className}
 				noImage={noImage}
+				noborders={noborders}
 			/>
 		:
 		style && style == 'pricing' ?
@@ -177,6 +180,7 @@ const Card: React.FC<ICardProps> = ({ title, desc, imgUrl, direction, className,
 				nonFeatures={nonFeatures}
 				pricingCTAtext={pricingCTAtext}
 				seeSymbol={seeSymbol}
+				noborders={noborders}
 			/>
 		:
 			<SoftCard
@@ -187,6 +191,7 @@ const Card: React.FC<ICardProps> = ({ title, desc, imgUrl, direction, className,
 				className={className}
 				IntegrationButtonText={IntegrationButtonText}
 				IntegrationButtonLink={IntegrationButtonLink}
+				noborders={noborders}
 			/>
 	)
 }

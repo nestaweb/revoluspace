@@ -6,22 +6,21 @@ import { Analytics } from '@vercel/analytics/react';
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata: Metadata = {
-  title: "Revoluspace | Simplify hybrid work",
-  description: "Build stronger connections and improve office experience with a solution entirely integrated within Slack and Microsoft Teams",
-};
+
 
 export default function RootLayout({
   children,
+  params: {locale}
 }: Readonly<{
   children: React.ReactNode;
+  params: {locale: string};
 }>) {
   return (
-    <html lang="en">
+    <html lang={locale} hreflang={locale}>
       <body className={inter.className}>
         {children}
-        <Analytics />
-        <SpeedInsights />
+        {/* <Analytics />
+        <SpeedInsights /> */}
       </body>
     </html>
   );

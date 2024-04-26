@@ -1,0 +1,240 @@
+{
+	"landing": {
+	  "navigation": {
+		"home": "Accueil",
+		"slack": "Slack",
+		"msteams": "MS Teams",
+		"pricing": "Tarifs",
+		"bookademo": "Demander une demo",
+		"legal": "Confidentialité",
+		"generalTerms": "Condition générales",
+		"contact": "Contact"
+	  },
+	  "copyright": "Tous droits reservés.",
+	  "home": {
+		"seo": {
+		  "title": "Revoluspace | Simplifiez le travail hybride",
+		  "description":
+			"Renforcez les connexions sur site et optimisez la gestion de vos espaces en Flex Office avec une solution intégrée à Microsoft Teams et Slack."
+		},
+		"tagline": {
+			"title": "Simplifiez le",
+			"enhance": "travail hybride"
+		},
+		"addto": "Ajoutez à",
+		"about": "A propos de",
+		"getstarted": {
+			"title": "Commencez dès aujourd'hui avec ",
+			"enhance": "Revoluspace"
+		},
+		"noConditions_1": "Aucune carte de crédit nécessaire. Commencez gratuitement.",
+		"noConditions_2": "Essai gratuit de 14 jours.",
+		"easytouse": {
+			"title": "Facilitez la gestion du ",
+			"enhance": "flex-office et du télétravail"
+		},
+		"hor_cards": {
+			"card_0": {
+				"title": "Coordination des équipes",
+				"details": "Vos employés peuvent visualiser, pour chaque jour de la semaine, quand leurs collègues viendront au bureau. Intégrez facilement votre politique de télétravail.",
+				"imgUrl": "/Demo MS Teams.svg",
+				"direction": ""
+			},
+			"card_1": {
+				"title": "Réservation de bureaux",
+				"details": "Notre logiciel de gestion du flex-office permet de réserver un bureau en quelques clics et de visualiser en un coup d’œil où travaillent vos collègues grâce aux plans d'étage.",
+				"imgUrl": "/Demo MS Teams.svg",
+				"direction": "reverse"
+			},
+			"card_2": {
+				"title": "Optimisez les espaces",
+				"details": "Afin de mieux gérer vos espaces de travail, bénéficiez d’informations analytiques afin de maximiser l'efficacité, et diminuer vos coûts.",
+				"imgUrl": "/Demo MS Teams.svg",
+				"direction": ""
+			}
+		},
+		"smartofficesolution": {
+			"title": "La solution de flex office entièrement intégrée à vos ",
+			"enhance": "outils favoris"
+		},
+		"ver_cards": {
+			"card_0": {
+				"title": "Partenaire officiel",
+				"details": "Revoluspace est un partenaire officiel de Slack et de Microsoft, respectant les normes les plus élevées en matière de sécurité et de performance.",
+				"imgUrl": "/Demo Slack.svg"
+			},
+			"card_1": {
+				"title": "Authentification sécurisée",
+				"details": "Simplifiez l'accès des utilisateurs et renforcez la sécurité avec l'authentification unique (SSO) pour Microsoft et Slack.",
+				"imgUrl": "/Demo MS Teams.svg"
+			},
+			"card_2": {
+				"title": "Paramétrage rapide",
+				"details": "Invitez vos collègues directement depuis votre espace de travail Slack ou Microsoft Teams en un seul clic.",
+				"imgUrl": "/Demo Slack.svg"
+			}
+		},
+		"smartandsecure": {
+			"title": "Revoluspace vous assure une ",
+			"enhance": "sécurité optimale"
+		},
+		"TrustRevoluspace": {
+			"tagline": {
+				"title": "Faites confiance à Revoluspace pour la ",
+				"enhance": "sécurité et la vie privée"
+			},
+			"details": "Une solution robuste afin de garantir le succès au niveau de l'entreprise. Nous protégeons vos données et fournissons les informations et outils nécessaires pour répondre à vos exigences en matière de confidentialité.",
+			"text_cards": {
+				"card_0": {
+					"title": "🔒 RGPD",
+					"details": "Our desk booking solution is compliant with GDPR and privacy laws, providing assurance that your actions align with legal standards."
+				},
+				"card_1": {
+					"title": "⚖️ Accès Single Sign-On",
+					"details": "Grâce à l'authentification unique (SSO), les utilisateurs peuvent se connecter à Revoluspace en utilisant leurs identifiants Microsoft ou Slack pour une expérience sécurisée et efficace."
+				},
+				"card_2": {
+					"title": "🔑 Données encryptées",
+					"details": "Les données chiffrées dans notre solution de flex office sont conformes aux normes attendues, garantissant une sécurité et une conformité robustes."
+				},
+				"card_3": {
+					"title": "📞 24/7 support",
+					"details": "Notre équipe de support offre une assistance rapide et assure un service sans interruption pour nos utilisateurs."
+				}
+			}
+		},
+		"faqs": {
+			"tagline": {
+				"title": "",
+				"enhance": "FAQ"
+			},
+			"details" : "Vous avez des questions sur notre logiciel de gestion du télétravail et du flex office-office? Trouvez des réponses ci-dessous.",
+			"qa": {
+				"qa_0": {
+					"question": "Y a-t-il des frais d’implémentation ?",
+					"answer": "Non, il n'y a pas de frais d'installation associés à notre solution de réservation de bureaux"
+				},
+				"qa_1": {
+					"question": "Serais-je facturé une fois que j'aurai commencé l'essai ?",
+					"answer": "Non. Vous pouvez commencer un essai gratuit sans avoir à renseigner vos coordonnées bancaires. Si vous décidez par la suite de passer à des fonctionnalités payantes, vous pourrez ajouter en toute sécurité vos informations de paiement à ce moment-là."
+				},
+				"qa_2": {
+					"question": "Comment fonctionne la période d'essai ?",
+					"answer": "Cliquez sur le bouton \"add to slack\" qui se trouve sur cette page et commencez votre essai gratuit durant 14 jours, aucune information bancaire ne vous sera demandée."
+				},
+				"qa_3": { 
+					"question": "Comment ma facture mensuelle est-elle calculée ?",
+					"answer": "Vous serez facturé uniquement pour chaque utilisateur actif de Revoluspace, c'est-à-dire pour les utilisateurs qui ont utilisé le calendrier pendant le mois facturé."
+				}
+			}
+		}
+	  },
+	  "msteams": {
+		"seo": {
+		  "title": "Revoluspace | Desk booking app integrated in MS Teams",
+		  "description":
+			"Découvrez la solution tout-en-un qui facilite la collaboration et qui simplifie la gestion flexoffice, entièrement intégrée dans Microsoft Teams"
+		},
+		"tagline": {
+			"title": "Solution de réservation de bureaux dans ",
+			"enhance": "MS Teams"
+		},
+		"details":
+		  "Découvrez la solution tout-en-un qui facilite la collaboration et qui simplifie la gestion flexoffice, entièrement intégrée dans Microsoft Teams",
+		  "easytouse": {
+			  "title": "Solution simple à utiliser pour le ",
+			  "enhance": "Flex office "
+		  }
+	  },
+	  "slack": {
+		"seo": {
+		  "title": "Revoluspace | Desk booking app integrated in Slack",
+		  "description": "Renforcez les connexions et optimisez l'utilisation des espaces en Flex Office avec notre solution intégrée à Slack"
+		},
+		"tagline": {
+			"title": "Solution de réservation de bureaux dans ",
+			"enhance": "Slack"
+		},
+		"details": "Renforcez les connexions et optimisez l'utilisation des espaces en Flex Office avec notre solution intégrée à Slack",
+		"easytouse": {
+			"title": "Solution simple à utiliser pour le ",
+			"enhance": "Flex office "
+		}
+	  },
+	  "pricing": {
+		"seo": {
+		  "title": "Revoluspace | Plans & Pricing",
+		  "description": "Pas de frais cachés, pas de frais d'implémentation, pas de minimum. Choisissez simplement le plan qui vous convient."
+		},
+		"tagline": {
+			"title": "Une seule application pour gérer le télétravail et le ",
+			"enhance": "flex office !"
+		},
+		"details_1": "Essayez Revoluspace gratuitement.",
+		"details_2": "Aucune carte de crédit demandée.",
+		"item_1": "Pas de frais cachés",
+		"item_2": "Pas de frais d'implémentation",
+		"item_3": "Pas de minimum"
+	  },
+	  "legal": {
+		"seo": {
+		  "title": "Revoluspace | Confidentialité"
+		},
+		"title": "Confidentialité",
+		"sections": [
+		  {
+			"paragraphs": [
+			  "Le présent site est la propriété de la société REVOLUSPACE, société par actions simplifiée unipersonnelle, au capital de 10000 euros, dont le siège social est 64, rue Vergniaud 75013, immatriculée au Registre du Commerce et des Sociétés de Paris sous le numéro 898943774, dont le numéro d'identification TVA est : FR86898943774.",
+			  "Le directeur de la publication du site est Monsieur Jonas Fredj en qualité de Président de la société Revoluspace."
+			]
+		  },
+		  {
+			"title": "Protection des données à caractère personnel",
+			"paragraphs": [
+			  "La loi Informatique et Libertés du 06 janvier 1978 vous permet à tout moment modifier ou supprimer les renseignements liés à votre inscription sur notre site, blog ou webmagazine. Revoluspace respecte la législation française sur la protection de la vie privée et garde confidentielle les informations vous concernant.",
+			  "L'utilisateur est notamment informé que les réponses données aux formulaires présents sur le site pourront être transmises et exploitées par la société REVOLUSPACE et ses partenaires.",
+			  "En application des articles 39 et 40 de la loi n° 78-18 du 6 janvier 1978 relative à l'informatique, aux fichiers et aux libertés, l'utilisateur dispose d'un droit d'accès, de rectification, d'effacement de ses données personnelles traitées par la société REVOLUSPACE, ou de limitation du traitement relatif à ces données personnelles, ou d'opposition au traitement et à la portabilité de ces données personnelles en complétant le formulaire ci-contre."
+			]
+		  },
+		  {
+			"title": "Navigation sur les sites Web de Revoluspace",
+			"paragraphs": [
+			  "L'utilisateur du site Web www.revoluspace.com reconnait avoir vérifié que la configuration informatique utilisée ne contient aucun virus et qu'elle est en parfait état de fonctionnement. L'utilisateur du site web reconnait disposer de la compétence et des moyens nécessaires pour accéder et utiliser ce site. L'utilisateur reconnait avoir été informé que le site web www.revoluspace.com est accessible 24 heures/24 heures et 7 jours/7 jours, à l'exception des cas de force majeure, difficultés informatiques, difficultés liées à la structure des réseaux de télécommunications ou difficultés techniques. Pour des raisons de maintenance, la société Revoluspace pourra interrompre l'accès à son site et s'efforcera d'en avertir préalablement les utilisateurs.",
+			  "La société Revoluspace met tout en œuvre pour offrir aux utilisateurs des informations et/ou des outils disponibles et vérifiés, mais ne saurait être tenue pour responsable des erreurs, d'une absence de disponibilité des informations et/ou de la présence de virus sur son site. Les informations fournies par la société Revoluspace le sont à titre indicatif. La société Revoluspace ne saurait garantir l'exactitude des informations diffusées sur son site. En conséquence, l'utilisateur reconnait utiliser ces informations sous sa responsabilité exclusive.",
+			  "L'ensemble de ce site relève des législations française et internationale sur le droit d'auteur et la propriété intellectuelle. Tous les droits de reproduction sont réservés, y compris pour les documents iconographiques et photographiques. Certaines informations ou documents accessibles sur le site figurent en version française et en d'autres langues. L'attention des ultilisateurs du site est attirée sur le fait qu'en cas de divergence de rédaction entre les différentes versions, la version française prévaut.",
+			  "La marque Revoluspace est une marque protégée. Toute reproduction totale ou partielle de cette marque, sans l'autorisation préalable et expresse de la société Revoluspace est donc prohibée. Enfin, les liens hypertextes mis en place dans le cadre du présent site Web en direction d'autres ressources présentes sur le réseau internet ne sauraient engager la responsabilité de la société Revoluspace."
+			]
+		  },
+		  {
+			"title": "Outils, ressources et supports",
+			"paragraphs": [
+			  "Les logos, livres blancs, plaquettes commerciales, présentations produits, vidéos, études et tous les supports édités par Revoluspace ne peuvent jamais être utilisés par des tiers, sauf accord écrit des membres de la société Revoluspace, nous vous remercions de bien vouloir adresser vos demandes à l'adresse ci-contre : contact@revoluspace.com"
+			]
+		  },
+		  {
+			"title": "Durée de conservation des données",
+			"paragraphs": [
+			  "Revoluspace conserve les Données Personnelles des personnes concernées pour la durée strictement nécessaire aux finalités poursuivies, et notamment à la fourniture de ses Services, conformément aux exigences légales et réglementaires.",
+			  "Les données personnelles sont conservées trois (3) ans à compter du dernier contact entrant de la personne concernée avec Revoluspace.",
+			  "En ce qui concerne les Clients, pour la durée de l'abonnement, plus trois (3) ans.",
+			  "Ces informations peuvent également être conservées pour une durée supplémentaire de deux (2) ans, en accès restreint et exceptionnel, à des fins de preuve dans le respect des obligations légales et réglementaires de la Société.",
+			  "Les documents comptables et les registres sont conservés pendant dix (10) ans comme preuves comptables."
+			]
+		  },
+		  {
+			"title": "Politique de cookies",
+			"paragraphs": [
+			  "Les utilisateurs sont informés que le présent site utilise des cookies. Les cookies sont des fichiers d'informations stockés sur les outils informatiques et appareils mobiles des utilisateurs de sites Internet lors de leur consultation. Les cookies émis facilitent la navigation de l'utilisateur, accélèrent le chargement, personnalisent les contenus et offrent des fonctionnalités relatives aux réseaux sociaux tout en permettant à l'exploitant du site de réaliser des statistiques de visites et navigation. La navigation de l'utilisateur sur le présent site suppose que celui-ci a accepté la politique des cookies ci-dessus décrite. Il peut néanmoins refuser ce dispositif directement dans les options du navigateur. Toutefois, ce refus pourra entrainer un dysfonctionnement partiel du site."
+			]
+		  }
+		]
+	  },
+	  "contact": {
+		"title": "Contact us",
+		"seo": {
+		  "title": "Revoluspace | Contact-us"
+		}
+	  }
+	}
+}
+  

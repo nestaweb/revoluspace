@@ -1,6 +1,7 @@
 import Accordion from "@/components/Accordion";
 import Bottom from "@/components/Bottom";
 import Card from "@/components/Card";
+import Demo from "@/components/Demo";
 import Footer from "@/components/Footer";
 import HeroHeader from "@/components/HeroHeader";
 import IntegrationButton from "@/components/IntegrationButton";
@@ -12,6 +13,7 @@ export {
 	Accordion,
 	Bottom,
 	Card,
+	Demo,
 	FadeInSection,
 	Footer,
 	HeroHeader,

@@ -1,9 +1,11 @@
-"use client"
 import { IntegrationButton } from '@/components/components';
+import {useTranslations} from 'next-intl';
+import {unstable_setRequestLocale} from 'next-intl/server';
 
 interface IHeroHeaderProps {
 	title: string;
 	description: string;
+	locale: string;
 	enhancedWords?: string;
 	integration?: 'slack' | 'msteams';
 	className?: string;
@@ -11,7 +13,10 @@ interface IHeroHeaderProps {
 	noButtons?: boolean;
 }
 
-const HeroHeader: React.FC<IHeroHeaderProps> = ({ title, description, enhancedWords, integration, className, green, noButtons }) => {
+const HeroHeader: React.FC<IHeroHeaderProps> = ({ title, description, enhancedWords, locale, integration, className, green, noButtons }) => {
+	unstable_setRequestLocale(locale);
+	const t = useTranslations('landing');
+
 	return (
 		<div className={`min-h-screen flex items-center ${className ? className : ""}`}>
 			<div className="mx-auto p-4 lg:w-full">
@@ -24,7 +29,7 @@ const HeroHeader: React.FC<IHeroHeaderProps> = ({ title, description, enhancedWo
 								<div className="flex flex-col gap-4 justify-center items-center lg:flex-row">
 								{integration == 'slack' ?
 									<IntegrationButton
-										text="Add to"
+										text={t('home.addto')}
 										integration="Slack"
 										primary
 										green={green}
@@ -32,7 +37,7 @@ const HeroHeader: React.FC<IHeroHeaderProps> = ({ title, description, enhancedWo
 									:
 									integration == 'msteams' ?
 									<IntegrationButton
-										text="Add to"
+										text={t('home.addto')}
 										integration="MS Teams"
 										primary
 										green={green}
@@ -40,13 +45,13 @@ const HeroHeader: React.FC<IHeroHeaderProps> = ({ title, description, enhancedWo
 									:
 									<>
 									<IntegrationButton
-										text="Add to"
+										text={t('home.addto')}
 										integration="Slack"
 										primary
 										green={green}
 									/>
 									<IntegrationButton
-										text="Add to"
+										text={t('home.addto')}
 										integration="MS Teams"
 										primary
 										green={green}
@@ -54,7 +59,7 @@ const HeroHeader: React.FC<IHeroHeaderProps> = ({ title, description, enhancedWo
 									</>
 								}
 								</div>
-								<p className={`${green ? "text-brand-green-600" : "text-brand-violet-700"} text-center font-medium`}>14-day free trial - No credit card required</p>
+								<p className={`${green ? "text-brand-green-600" : "text-brand-violet-700"} text-center font-medium`}>{t('home.noConditions_2')} - {t('home.noConditions_1')}</p>
 							</>
 						}
 					</div>

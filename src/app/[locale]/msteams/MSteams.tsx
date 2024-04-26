@@ -1,17 +1,27 @@
 import Image from 'next/image';
 import { NavBar, HeroHeader, Card, Bottom, Footer, FadeInSection } from '@/components/components';
+import {useTranslations} from 'next-intl';
+import {unstable_setRequestLocale} from 'next-intl/server';
 
-export default function MSteams() {
+interface IMSteams {
+	locale: string;
+}
+
+const MSteams: React.FC<IMSteams> = ({ locale }) => {
+	unstable_setRequestLocale(locale);
+	const t = useTranslations('landing.msteams');
+
 	return (
 		<div className="max-w-[100vw] overflow-hidden dark:bg-gray-800">
 			<div className="relative z-20">
-				<NavBar current='msteams' />
+				<NavBar current='msteams' locale={locale}/>
 				<FadeInSection>
 				<HeroHeader
-					title="Desk booking app integrated in"
-					enhancedWords='MS Teams'
-					description="Explore the comprehensive solution for seamless office collaboration and flexible office management, entirely integrated within Microsoft Teams"
+					title={t('tagline.title')}
+					enhancedWords={t('tagline.enhance')}
+					description={t('details')}
 					integration="msteams"
+					locale={locale}
 				/>
 				</FadeInSection>
 			</div>
@@ -30,7 +40,7 @@ export default function MSteams() {
 			</div>
 			<div className="w-5/6 mx-auto flex flex-col gap-y-[15vh]">
 				<FadeInSection>
-				<p className="text-3xl lg:text-5xl text-center font-semibold">Easy-to-use solution for <span className='purple-gradient'>hybrid work</span></p>
+				<p className="text-3xl lg:text-5xl text-center font-semibold">{t('easytouse.title')}<span className='purple-gradient capitalize'>{t('easytouse.enhance')}</span></p>
 				</FadeInSection>
 				<div className="flex gap-x-[5vw] flex-col lg:flex-row gap-y-8">
 				<FadeInSection>
@@ -147,3 +157,5 @@ export default function MSteams() {
 		</div>
 	)
 }
+
+export default MSteams;

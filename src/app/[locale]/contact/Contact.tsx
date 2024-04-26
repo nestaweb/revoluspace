@@ -1,16 +1,28 @@
 import Image from 'next/image';
 import { NavBar, HeroHeader, Card, Bottom, Footer } from '@/components/components';
+import {useTranslations} from 'next-intl';
+import {unstable_setRequestLocale} from 'next-intl/server';
+import ContactForm from './ContactForm';
+// import { HubspotProvider } from '@aaronhayes/react-use-hubspot-form';
+import { HubspotProvider } from 'next-hubspot';
 
-export default function Contact() {
+interface IContact {
+	locale: string;
+}
+
+const Contact: React.FC<IContact> = ({ locale }) => {
+	unstable_setRequestLocale(locale);
+	const t = useTranslations('landing');
 	return (
 		<div className="max-w-[100vw] overflow-hidden dark:bg-gray-800">
 			<div className="relative z-20">
-				<NavBar current='contact' />
+				<NavBar current='contact' locale={locale} />
 				<HeroHeader
 					title="Contact us to"
 					enhancedWords='Get Started'
 					description="Got a technical issue? Want to send feedback about a beta feature? Need details about our Business plan? Let us know."
 					noButtons
+					locale={locale}
 				/>
 			</div>
 			<div className="w-[30vh] h-[30vh] lg:w-[60vh] lg:h-[60vh] rounded-full bg-brand-violet-100 dark:bg-violet-700/50 lg:dark:bg-violet-700 absolute top-[10vh] -left-[15vh] lg:-left-[30vh] flex items-center justify-center shadow-[0_0px_100px] shadow-violet-600/40">
@@ -40,7 +52,11 @@ export default function Contact() {
 				</div>
 			</div>
 			<div className='w-[90vw] lg:w-3/6 mx-auto -translate-y-[17.5vh] z-20 relative'>
-				<form action="#" className="space-y-8 z-10 relative">
+				<HubspotProvider>
+					<ContactForm locale={locale} />
+				</HubspotProvider>
+				
+				{/* <form action="#" className="space-y-8 z-10 relative">
 					<div className='flex gap-4'>
 						<div className='w-1/2'>
 							<label className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300 relative z-10">First Name</label>
@@ -69,15 +85,18 @@ export default function Contact() {
 					</div>
 					
 					<button type="submit" className="py-3 px-5 text-sm font-medium text-center text-brand-white rounded-lg bg-brand-violet-700 sm:w-fit hover:bg-brand-violet-700/80 focus:ring-4 focus:outline-none dark:bg-brand-violet-700/80 dark:hover:bg-brand-violet-700/60 ease-in-out duration-200">Send message</button>
-				</form>
+				</form> */}
 			</div>
 			<Bottom 
-				title="Get Started with"
-				enhancedWords='Revoluspace'
+				title={t('home.getstarted.title')}
+				enhancedWords={t('home.getstarted.enhance')}
 				noButtons
 				newsletter
+				locale={locale}
 			/>
 			<Footer/>
 		</div>
 	)
 }
+
+export default Contact;

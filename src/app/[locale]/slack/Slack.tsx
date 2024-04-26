@@ -1,18 +1,26 @@
 import Image from 'next/image';
 import { NavBar, HeroHeader, Card, Bottom, Footer, FadeInSection } from '@/components/components';
+import {useTranslations} from 'next-intl';
+import {unstable_setRequestLocale} from 'next-intl/server';
 
+interface ISlack {
+	locale: string;
+}
 
-export default function Slack() {
+const Slack: React.FC<ISlack> = ({ locale }) => {
+	unstable_setRequestLocale(locale);
+	const t = useTranslations('landing.slack');
 	return (
 		<div className="max-w-[100vw] overflow-hidden dark:bg-gray-800">
 			<div className="relative z-20">
-				<NavBar current='slack' />
+				<NavBar current='slack' locale={locale} />
 				<FadeInSection>
 				<HeroHeader
-					title="Desk booking app integrated in"
-					enhancedWords='Slack'
-					description="Encourage your teams to connect and optimize your spaces, all inside Slack"
+					title={t('tagline.title')}
+					enhancedWords={t('tagline.enhance')}
+					description={t('details')}
 					integration="slack"
+					locale={locale}
 				/>
 				</FadeInSection>
 			</div>
@@ -33,7 +41,7 @@ export default function Slack() {
 			</div>
 			<div className="w-5/6 mx-auto flex flex-col gap-y-[15vh]">
 				<FadeInSection>
-				<p className="text-3xl lg:text-5xl text-center font-semibold">Easy-to-use solution for <span className='purple-gradient'>hybrid work</span></p>
+				<p className="text-3xl lg:text-5xl text-center font-semibold">{t('easytouse.title')}<span className='purple-gradient capitalize'>{t('easytouse.enhance')}</span></p>
 				</FadeInSection>
 				<div className="flex gap-x-[5vw] flex-col lg:flex-row gap-y-8">
 				<FadeInSection>
@@ -150,3 +158,5 @@ export default function Slack() {
 		</div>
 	)
 }
+
+export default Slack;

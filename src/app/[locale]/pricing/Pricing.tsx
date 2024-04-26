@@ -1,7 +1,15 @@
 import Image from 'next/image';
 import { NavBar, HeroHeader, Card, Bottom, Footer, FadeInSection } from '@/components/components';
+import {useTranslations} from 'next-intl';
+import {unstable_setRequestLocale} from 'next-intl/server';
 
-export default function Pricing() {
+interface IPricing {
+	locale: string;
+}
+
+const Pricing: React.FC<IPricing> = ({ locale }) => {
+	unstable_setRequestLocale(locale);
+	const t = useTranslations('landing');
 
 	const premiumFeature = [
 		"Secure Singke Sign-On (SSO)",
@@ -35,14 +43,15 @@ export default function Pricing() {
 	return (
 		<div className="max-w-[100vw] overflow-hidden dark:bg-gray-800">
 			<div className="relative z-20">
-				<NavBar current='pricing' />
+				<NavBar current='pricing' locale={locale} />
 				<FadeInSection>
 				<HeroHeader
-					title="Eliminate the back and forth, bring your team"
-					enhancedWords='Together'
+					title={t('pricing.tagline.title')}
+					enhancedWords={t('pricing.tagline.enhance')}
 					description=""
 					integration="msteams"
 					noButtons
+					locale={locale}
 				/>
 				</FadeInSection>
 			</div>
@@ -111,3 +120,5 @@ export default function Pricing() {
 		</div>
 	)
 }
+
+export default Pricing;

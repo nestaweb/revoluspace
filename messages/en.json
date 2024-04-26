@@ -1,0 +1,264 @@
+{
+	"landing": {
+	  "navigation": {
+		"home": "Home",
+		"slack": "Slack",
+		"msteams": "MS Teams",
+		"pricing": "Pricing",
+		"bookademo": "Book a demo",
+		"legal": "Legal",
+		"generalTerms": "General Terms",
+		"contact": "Contact"
+	  },
+	  "copyright": "All rights reserved.",
+	  "home": {
+		"seo": {
+		  "title": "Revoluspace | Simplify hybrid work",
+		  "description":
+			"Enhance workplace connections and streamline flexible office management with our fully integrated solution within Slack and Microsoft Teams"
+		},
+		"tagline": {
+			"title": "Simplify",
+			"enhance": "hybrid work"
+		},
+		"addto": "Add to",
+		"about": "About",
+		"getstarted": {
+			"title": "Get started with ",
+			"enhance": "Revoluspace"
+		},
+		"noConditions_1": "No credit card needed. Get started for free.",
+		"noConditions_2": "14 day free trial",
+		"easytouse": {
+			"title": "Easy-to-use solution for ",
+			"enhance": "Flexible workplaces"
+		},
+		"hor_cards": {
+			"card_0": {
+				"title": "Team coordination",
+				"details": "Allow your team to see which teammates and favorite co- workers are coming into the office each day. Integrate your remote work policy seamlessly into the system.",
+				"imgUrl": "/Demo MS Teams.svg",
+				"direction": ""
+			},
+			"card_1": {
+				"title": "Desk booking",
+				"details": "Easily book a desk with our intuitive system and locate teammates effortlessly. Seamlessly integrate customizable floor plans to optimize your office's efficiency.",
+				"imgUrl": "/Demo MS Teams.svg",
+				"direction": "reverse"
+			},
+			"card_2": {
+				"title": "Workplace analytics",
+				"details": "Revoluspace delivers comprehensive workspace analytics, providing detailed utilization data and occupancy trends to enhance office space optimization.",
+				"imgUrl": "/Demo MS Teams.svg",
+				"direction": ""
+			}
+		},
+		"smartofficesolution": {
+			"title": "Your smart office solution, integrated in ",
+			"enhance": "your favorite tools!"
+		},
+		"ver_cards": {
+			"card_0": {
+				"title": "Official Partner",
+				"details": "Revoluspace is an official partner of Slack and Microsoft, adhering to the highest standards.",
+				"imgUrl": "/Demo Slack.svg"
+			},
+			"card_1": {
+				"title": "Secure authentication",
+				"details": "Simplify user access and enhance security with Single Sign-On (SSO) Microsoft and Slack",
+				"imgUrl": "/Demo MS Teams.svg"
+			},
+			"card_2": {
+				"title": "Fast set-up",
+				"details": "Invite you colleagues directly from your Slack ou Microsot Teams Workspace in just one clic",
+				"imgUrl": "/Demo Slack.svg"
+			}
+		},
+		"smartandsecure": {
+			"title": "A smart and secure ",
+			"enhance": "office solution"
+		},
+		"TrustRevoluspace": {
+			"tagline": {
+				"title": "Trust Revoluspace with your ",
+				"enhance": "security and privacy"
+			},
+			"details": "A robust hybrid workplace solution for achieving success at the enterprise level. We protect your data and offer the necessary information and tools to fulfill your privacy obligations.",
+			"text_cards": {
+				"card_0": {
+					"title": "🔒 GDPR",
+					"details": "Our desk booking solution is compliant with GDPR and privacy laws, providing assurance that your actions align with legal standards."
+				},
+				"card_1": {
+					"title": "⚖️ Access with single sign-on",
+					"details": "Through Single Sign-On (SSO), users can log into Revoluspace using their Microsoft or Slack credentials for a secure and efficient experience."
+				},
+				"card_2": {
+					"title": "🔑 Encrypted data",
+					"details": "The encrypted data within our workplace scheduling software complies with the expected standards, ensuring robust security and compliance."
+				},
+				"card_3": {
+					"title": "📞 24/7 support",
+					"details": "Our dedicated support team is committed to providing timely assistance, ensuring uninterrupted service and continuous satisfaction for our users."
+				}
+			}	
+		},
+		"faqs": {
+			"tagline": {
+				"title": "Frequently Asked Questions",
+				"enhance": "about Revoluspace"
+			},
+			"details" : "A simple, robust and powerful solution for achieving success at the enterprise level. We protect your data and offer the necessary information and tools to fulfill your privacy obligations.",
+			"qa": {
+				"qa_0":{
+					"question": "Is there a setup fee?",
+					"answer": "No, there are no setup fees associated with our hybrid workplace solution!"
+				},
+				"qa_1":{
+					"question": "Will I be charged once I start the free trial?",
+					"answer": "No. You can start a free trial without needing a payment method. If you choose to continue with paid features after the free trial, you will securely set up your payment method then (SKEDDA)."
+				},
+				"qa_2":{
+					"question": "How does the free trial work?",
+					"answer": "Experience Revoluspace free for 14 days without entering credit card details by clicking on the “Add to Slack” or “Add to Teams” buttons on this webpage. The onboarding process is quick, taking just 3 minutes."
+				},
+				"qa_3":{
+					"question": "How is my monthly bill calculated?",
+					"answer": "After the free trial, you will only be charged for each active Revoluspace user, i.e. for users who have set a status during the month being charged"
+				}
+			}
+		}
+	  },
+	  "msteams": {
+		"seo": {
+		  "title": "Revoluspace | Desk booking app integrated in MS Teams",
+		  "description":
+			"Explore the all-in-one solution to optimize office collaboration and flexible office management, fully integrated into Microsoft Teams"
+		},
+		"tagline": {
+			"title": "Desk booking app integrated in ",
+			"enhance": "MS Teams"
+		},
+		"details":
+		  "Explore the comprehensive solution for seamless office collaboration and flexible office management, entirely integrated into Microsoft Teams",
+		  "easytouse": {
+			  "title": "Easy-to-use solution for ",
+			  "enhance": "hybrid work"
+		  }
+	  },
+	  "slack": {
+		"seo": {
+		  "title": "Revoluspace | Desk booking app integrated in Slack",
+		  "description": "Encourage your teams to connect and optimize your spaces, all inside Slack"
+		},
+		"tagline": {
+			"title": "Desk booking app integrated in ",
+			"enhance": "Slack"
+		},
+		"details": "Encourage your teams to connect and optimize your spaces, all inside Slack",
+		"easytouse": {
+			"title": "Easy-to-use solution for ",
+			"enhance": "hybrid work"
+		}
+	  },
+	  "pricing": {
+		"seo": {
+		  "title": "Revoluspace | Plans & Pricing",
+		  "description": "No surprises, no setup fees, no minimum. Simply choose a plan"
+		},
+		"tagline": {
+			"title": "Eliminate the back and forth, bring your team ",
+			"enhance": "together"
+		},
+		"details_1": "Try Revoluspace for free.",
+		"details_2": "No credit card required.",
+		"item_1": "No hidden fees",
+		"item_2": "No setup fees",
+		"item_3": "No minimum"
+	  },
+	  "legal": {
+		"seo": {
+		  "title": "Revoluspace | Private policy"
+		},
+		"title": "Private policy",
+		"sections": [
+		  {
+			"title": "Data security",
+			"paragraphs": [
+			  "We have put in place appropriate security measures to prevent your personal data from being accidentally lost, used or accessed in an unauthorized way, altered or disclosed. In addition, we limit access to your personal data to those employees, agents, contractors and other third parties who have a business need to know. They will only process your personal data on our instructions, and they are subject to a duty of confidentiality.We have put in place procedures to deal with any suspected personal data breach and will notify you and any applicable regulator of a breach where we are legally required to do so."
+			]
+		  },
+		  {
+			"title": "Origin and purpose of the Personal Data collected",
+			"paragraphs": [
+			  "We will only use your personal data where we are legally permitted to do so. Most commonly, we will use your personal data in the following circumstances:",
+			  "-\tWhere we need to perform a contract that we are about to enter into or have entered into with you.",
+			  "-\tWhere is necessary for our legitimate interests (or those of a third party) and your interests and fundamental rights do not override those interests.",
+			  "-\tWhere we have to comply with a legal obligation.",
+			  "Generally, we do not rely on consent as a legal basis for processing your personal data, although when required by law we will get your consent before sending direct marketing communications to you via email or text message. You have the right to withdraw consent to marketing at any time by contacting us.",
+			  "The collection, storage and processing of this information and Personal Data have the following purposes:",
+			  "-\tUse of the Solution by the User which may include:",
+			  "(a) Verification, identification and authentication of data transmitted by the User;",
+			  "(b) Providing you with our services;",
+			  "(c) Managing our relationship with you which may include notifying you about changes to our terms or privacy policy;",
+			  "-\tOrganisation of the conditions of use of the payment services;",
+			  "-\tTo manage our relationship with you which may include:",
+			  "(a) Notifying you about updates to our projects, products and services;",
+			  "(b) Contacting you in relation to your user account and use of our services;",
+			  "-\tManagement of possible disputes with Clients and/or Users.",
+			  "-\tUse data analytics to improve our website, products/services, marketing, customer relationships and experiences",
+			  "-\tTo administer and protect our business and this website (including troubleshooting, data analysis, testing, system maintenance, support, reporting and hosting of data)"
+			]
+		  },
+  
+		  {
+			"title": "Rights of data subjects",
+			"paragraphs": [
+			  "Pursuant to the Applicable Regulations, data subjects are reminded that they have the following rights:",
+			  "-\tRight of access, including the right to obtain copies of all of their Personal Data, as well as essential details of how Personal Data is processed;",
+			  "-\tRight to obtain the rectification of their Personal Data, as soon as possible, and the right to have any incomplete, inaccurate, ambiguous or outdated personal data completed;",
+			  "-\tRight to the erasure of their Personal Data, as soon as their processing is no longer necessary, or that the Customer or user has withdrawn their consent or has opposed their processing; or when their collection, use, communication or storage is prohibited;",
+			  "-\tRight to restriction of processing of Personal Data;",
+			  "-\tRight to portability of Personal Data; and",
+			  "-\tRight to object to the processing of their Personal Data.",
+			  "If the data subject wishes to know how Revoluspace uses their Personal Data, to request rectification, to object to the processing thereof, to request deletion thereof, or to request a copy of all Personal Data in possession of Revoluspace, he or she should send his or her request to Revoluspace by mail : contact@revoluspace.com and the request to be accompanied by a copy of valid ID documents, to the following address: Revoluspace, 64, rue Vergniaud, 75013 Paris, France",
+			  "In addition, the data subjects may lodge a complaint with the supervisory authorities, and in particular with the CNIL (https://www.cnil.fr/fr/plaintes)."
+			]
+		  },
+		  {
+			"title": "Duration of Data retention",
+			"paragraphs": [
+			  "Revoluspace shall keep the Personal Data of data subjects for the period strictly necessary for the purposes pursued, and in particular for the provision of its Services, in accordance with legal and regulatory requirements.",
+			  "Personal Data is retained three (3) years from the last incoming contact from the data subject with Revoluspace.",
+			  "Regarding Clients, for the duration of the subscription, plus three (3) years.",
+			  "This information may also be kept for an additional period of two (2) years, under restricted and exceptional access, for the purposes of proof in compliance with the Company's legal and regulatory obligations.",
+			  "Accounting documents and records shall be retained for ten (10) years as accounting evidence."
+			]
+		  },
+		  {
+			"title": "Third-party links",
+			"paragraphs": [
+			  "This website may include links to third-party websites, plug-ins and applications. Clicking on those links or enabling those connections may allow third parties to collect or share data about you. We do not control these third-party websites and are not responsible for their privacy statements. When you leave our website, we encourage you to read the privacy policy of every website you visit."
+			]
+		  }
+		]
+	  },
+	  "contact": {
+		"title": "Contact us",
+		"seo": {
+		  "title": "Revoluspace | Contact-us"
+		},
+		"contactOk": {
+		  "title": "Your Form has been submitted",
+		  "message": "Thank you for contacting us, our team will get back to you shortly.",
+		  "btnText": "Back home"
+		}
+	  },
+	  "demo": {
+		"seo": {
+		  "title": "Revoluspace | Try Revoluspace for free",
+		  "description": "Start a free trial in minutes · No credit card required."
+		}
+	  }
+	}
+}

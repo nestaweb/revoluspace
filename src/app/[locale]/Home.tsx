@@ -1,36 +1,45 @@
 import Image from 'next/image';
-import { NavBar, HeroHeader, Card, Accordion, Bottom, Footer, IntegrationButton, FadeInSection } from '@/components/components';
+import { NavBar, HeroHeader, Card, Accordion, Bottom, Footer, IntegrationButton, FadeInSection, Demo } from '@/components/components';
+import {useTranslations} from 'next-intl';
+import {unstable_setRequestLocale} from 'next-intl/server';
 
-export default function Home() {
+interface IHome {
+	locale: string;
+}
+
+const Home: React.FC<IHome> = ({ locale }) => {
+	unstable_setRequestLocale(locale);
+	const t = useTranslations('landing.home');
 
 	const faqs = [
 		{
-			question: 'Is there a setup fee?',
-			answer: 'There is no setup fee for Revoluspace. You can get started with Revoluspace by signing up on our website and inviting your team members in less than 5 minutes. You can try Revoluspace for free for 14 days.'
+			question: t('faqs.qa.qa_0.question'),
+			answer: t('faqs.qa.qa_0.answer')
 		},
 		{
-			question: 'Will I be charged once I start the free trial?',
-			answer: 'No. You can start a free trial without needing a payment method. If you choose to continue with paid features after the free trial, you will securely set up your payment method then (SKEDDA).'
+			question: t('faqs.qa.qa_1.question'),
+			answer: t('faqs.qa.qa_1.answer')
 		},
 		{
-			question: 'How does the free trial work?',
-			answer: 'Try Revoluspace for free for 14 days. You can invite your team members and start using Revoluspace in less than 5 minutes. You can cancel your free trial at any time.'
+			question: t('faqs.qa.qa_2.question'),
+			answer: t('faqs.qa.qa_2.answer')
 		},
 		{
-			question: 'How is my monthly bill calculated?',
-			answer: 'You will only for each active Revoluspace user, i.e. for users who have used the calendar during the month being billed. You can add or remove users at any time.'
+			question: t('faqs.qa.qa_3.question'),
+			answer: t('faqs.qa.qa_3.answer')
 		}
 	]
 
 	return (
 		<div className="max-w-[100vw] overflow-hidden dark:bg-gray-800">
 			<div className="relative min-h-screen z-20">
-				<NavBar current='home' />
+				<NavBar current='home' locale={locale} />
 				<FadeInSection>
 					<HeroHeader
-						title="Simplify"
-						enhancedWords='Hybrid Work'
-						description="Build stronger connection and improve office experience with a solution entirely integrated within slack and Microsoft Teams"
+						title={t('tagline.title')}
+						enhancedWords={t('tagline.enhance')}
+						description={t('seo.description')}
+						locale={locale}
 					/>
 				</FadeInSection>
 			</div>
@@ -65,6 +74,7 @@ export default function Home() {
 				</div>
 			</div>
 			<FadeInSection>
+				{/* <video className='lg:w-4/6 w-5/6 h-auto mx-auto -translate-y-[15vh]' src="/Revoluspace_Scheduling.mp4" loop muted autoPlay></video> */}
 			<Image 
 				src="/Demo MS Teams.svg"
 				width={500}
@@ -73,65 +83,67 @@ export default function Home() {
 				alt="Revoluspace MSteams Demo"
 				priority
 			/>
+			{/* <Demo locale={locale} /> */}
 			</FadeInSection>
 			<FadeInSection>
-				<p className="text-3xl lg:text-5xl text-center font-semibold mt-0 lg:mt-[5vh] pb-16 lg:pb-[20vh] w-5/6 mx-auto">Easy-to-use solution for <span className='purple-gradient'>Hybrid Work</span></p>
+				<p className="text-3xl lg:text-5xl text-center font-semibold mt-0 lg:mt-[5vh] pb-16 lg:pb-[20vh] w-5/6 mx-auto">{t('easytouse.title')}<span className='purple-gradient capitalize'>{t('easytouse.enhance')}</span></p>
 			</FadeInSection>
 			<div className="flex flex-col gap-y-[15vh] my-6 lg:my-10 w-11/12 mx-auto">
 			<FadeInSection>
 				<Card 
-					title="Team coordination"
-					desc="Visualize, for each day of the week, which teammates and favorite co-workers are coming into the office"
+					title={t('hor_cards.card_0.title')}
+					desc={t('hor_cards.card_0.details')}
 					imgUrl="/Demo MS Teams.svg"
-					IntegrationButtonText='About'
+					IntegrationButtonText={t('about')}
 					IntegrationButtonLink={{ slack: '/slack', msteams: '/msteams' }}
 				/>
 			</FadeInSection>
 			<FadeInSection>
 				<Card 
-					title="Desks Booking"
-					desc="Visualize, for each day of the week, which teammates and favorite co-workers are coming into the office"
+					title={t('hor_cards.card_1.title')}
+					desc={t('hor_cards.card_1.details')}
 					direction="reverse"
 					imgUrl="/Demo MS Teams.svg"
-					IntegrationButtonText='About'
+					IntegrationButtonText={t('about')}
 					IntegrationButtonLink={{ slack: '/slack', msteams: '/msteams' }}
 				/>
 			</FadeInSection>
 			<FadeInSection>
 				<Card
-					title="Workplace Analytics"
-					desc="Visualize, for each day of the week, which teammates and favorite co-workers are coming into the office"
-					imgUrl="/Demo MS Teams.svg"
-					IntegrationButtonText='About'
+					title={t('hor_cards.card_2.title')}
+					desc={t('hor_cards.card_2.details')}
+					imgUrl="/Revoluspace_Analytics.png"
+					IntegrationButtonText={t('about')}
+					noborders
 					IntegrationButtonLink={{ slack: '/slack', msteams: '/msteams' }}
 				/>
 			</FadeInSection>
 			</div>
 			<div className="w-5/6 py-[10vh] mt-[15vh] mx-auto flex flex-col gap-y-[15vh]">
 				<FadeInSection>
-					<p className="text-3xl lg:text-5xl text-center font-semibold">Revoluspace is entirely integrated with <span className='purple-gradient'>your favorite tools</span></p>
+					<p className="text-3xl lg:text-5xl text-center font-semibold">{t('smartofficesolution.title')}<span className='purple-gradient'>{t('smartofficesolution.enhance')}</span></p>
 				</FadeInSection>
 				<div className="flex gap-x-[5vw] flex-col lg:flex-row gap-y-8">
 				<FadeInSection>
 					<Card 
-						title="Official partner"
-						desc="Revoluspace is an official partner of Microsoft and Slack"
+						title={t('ver_cards.card_2.title')}
+						desc={t('ver_cards.card_2.details')}
 						imgUrl="/Demo MS Teams.svg"
 						style='vertical'
 					/>
 				</FadeInSection>
 				<FadeInSection>
 					<Card 
-						title="Secure authentification"
-						desc="Simplify user access and enhance security with single sign-on (SSO) on Microsoft Teams and Slack"
+						title={t('ver_cards.card_2.title')}
+						desc={t('ver_cards.card_2.details')}
 						imgUrl="/Demo MS Teams.svg"
 						style='vertical'
 					/>
 				</FadeInSection>
 				<FadeInSection>
 					<Card 
-						title="Fast set-up"
-						desc="Invite your team members in a few clicks and start using Revoluspace in less than 5 minutes"
+						title={t('ver_cards.card_2.title')}
+						desc={t('ver_cards.card_2.details')}
 						imgUrl="/Demo MS Teams.svg"
 						style='vertical'
 					/>
@@ -140,21 +152,21 @@ export default function Home() {
 			</div>
 			<div className='w-5/6 lg:w-[90vw] mx-auto flex flex-col gap-y-[15vh] mt-[15vh]'>
 				<FadeInSection>
-					<p className="text-3xl lg:text-5xl text-center font-semibold">Revoluspace ensure security for your <span className='purple-gradient'>hybrid teams</span></p>
+					<p className="text-3xl lg:text-5xl text-center font-semibold">{t('smartandsecure.title')}<span className='purple-gradient'>{t('smartandsecure.enhance')}</span></p>
 				</FadeInSection>
 				<FadeInSection>
 				<div className='w-full lg:gap-x-8 lg:w-[80vw] mx-auto flex justify-between flex-col lg:flex-row items-center lg:items-start gap-y-16'>
 					<div className="flex flex-grow flex-col justify-between leading-norma w-full lg:w-[35vw] h-fit gap-y-6">
-						<p className="mb-2 text-2xl lg:text-4xl font-semibold text-gray-900 dark:text-brand-white capitalize">Trust Revoluspace with your <span className='purple-gradient'>Security and privacy</span></p>
-						<p className="mb-3 text-lg font-normal text-gray-700 dark:text-gray-400">A simple, robust and powerful solution for achieving success at the entreprise level. We protect your data and offer the necessary informations and tools to fulfill your privacy obligations.</p>
+						<p className="mb-2 text-2xl lg:text-4xl font-semibold text-gray-900 dark:text-brand-white capitalize">{t('TrustRevoluspace.tagline.title')}<span className='purple-gradient capitalize'>{t('TrustRevoluspace.tagline.enhance')}</span></p>
+						<p className="mb-3 text-lg font-normal text-gray-700 dark:text-gray-400">{t('TrustRevoluspace.details')}</p>
 						<div className="flex gap-4 mt-5 flex-col items-center lg:flex-row">
 							<IntegrationButton
-								text='About Slack'
+								text={t('about')}
 								integration="Slack"
 								link={{ slack: '/slack', msteams: '/msteams' }}
 							/>
 							<IntegrationButton
-								text='About MS Teams'
+								text={t('about')}
 								integration="MS Teams"
 								link={{ slack: '/slack', msteams: '/msteams' }}
 							/>
@@ -162,26 +174,26 @@ export default function Home() {
 					</div>
 					<div className="flex flex-col gap-y-6 items-center">
 						<Card
-							title="🔒 GDPR"
-							desc="Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order."
+							title={t('TrustRevoluspace.text_cards.card_0.title')}
+							desc={t('TrustRevoluspace.text_cards.card_0.details')}
 							style='text'
 							className='py-14 w-full'
 						/>
 						<Card
-							title="⚖️ Access with single sign-on"
-							desc="Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order."
+							title={t('TrustRevoluspace.text_cards.card_1.title')}
+							desc={t('TrustRevoluspace.text_cards.card_1.details')}
 							style='text'
 							className='py-14 w-full'
 						/>
 						<Card
-							title="🔑 Encrypted data"
-							desc="Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order."
+							title={t('TrustRevoluspace.text_cards.card_2.title')}
+							desc={t('TrustRevoluspace.text_cards.card_2.details')}
 							style='text'
 							className='py-14 w-full'
 						/>
 						<Card
-							title="📞 24/7 support"
-							desc="Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order."
+							title={t('TrustRevoluspace.text_cards.card_3.title')}
+							desc={t('TrustRevoluspace.text_cards.card_3.details')}
 							style='text'
 							className='py-14 w-full'
 						/>
@@ -190,8 +202,9 @@ export default function Home() {
 				</FadeInSection>
 			</div>
 			<FadeInSection>
-			<div className='w-5/§ lg:w-[90vw] mx-auto flex flex-col gap-y-[5vh] mt-[10vh] lg:mt-[15vh]'>
-				<p className='text-3xl lg:text-5xl font-semibold text-center purple-gradient uppercase'>faq</p>
+			<div className='w-5/6 lg:w-[90vw] mx-auto flex flex-col gap-y-[5vh] mt-[10vh] lg:mt-[15vh]'>
+				<p className='text-3xl lg:text-5xl font-semibold text-center purple-gradient uppercase'>{t('faqs.tagline.title')}<span className='purple-gradient capitalize'>{t('faqs.tagline.enhance')}</span></p>
+				<p className='text-center'>{t('faqs.details')}</p>
 				<Accordion 
 					qa={faqs}
 				/>
@@ -199,11 +212,13 @@ export default function Home() {
 			</FadeInSection>
 			<FadeInSection>
 			<Bottom 
-				title="Get Started with"
-				enhancedWords='Revoluspace'
+				title={t('getstarted.title')}
+				enhancedWords={t('getstarted.enhance')}
 			/>
 			</FadeInSection>
 			<Footer/>
 		</div>
 	);
 }
+
+export default Home;
