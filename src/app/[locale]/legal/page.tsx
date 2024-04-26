@@ -1,6 +1,12 @@
 import { NavBar, SectionLegal, Footer } from "@/components/components";
+import {unstable_setRequestLocale} from 'next-intl/server';
 
-export default function Page() {
+type Props = {
+	params: {locale: string};
+};
+
+export default function Page({params: {locale}}: Props) {
+	unstable_setRequestLocale(locale);
 	const sections = [
 		{
 			title: "Data security",
@@ -63,7 +69,7 @@ export default function Page() {
 	];
 	return (
 		<div className="max-w-[100vw] overflow-hidden dark:bg-gray-800 min-h-screen">
-			<NavBar current='legal' />
+			<NavBar current='legal' locale={locale} />
 			<div className="w-[90vw] mx-auto">
 				<h1 className="xl:p-0 px-8 text-left text-landing-gray text-3xl pt-10 font-bold mt-[20vh]">
 					Privacy Policy

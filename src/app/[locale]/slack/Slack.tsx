@@ -10,6 +10,7 @@ interface ISlack {
 const Slack: React.FC<ISlack> = ({ locale }) => {
 	unstable_setRequestLocale(locale);
 	const t = useTranslations('landing.slack');
+	const l = useTranslations('landing');
 	return (
 		<div className="max-w-[100vw] overflow-hidden dark:bg-gray-800">
 			<div className="relative z-20">
@@ -150,8 +151,9 @@ const Slack: React.FC<ISlack> = ({ locale }) => {
 			</div>
 			<FadeInSection>
 			<Bottom 
-				title="Get Started with"
-				enhancedWords='Revoluspace'
+				title={l('home.getstarted.title')}
+				enhancedWords={l('home.getstarted.enhance')}
+				locale={locale}
 			/>
 			</FadeInSection>
 			<Footer/>

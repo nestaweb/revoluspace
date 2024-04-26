@@ -214,6 +214,7 @@ const Home: React.FC<IHome> = ({ locale }) => {
 			<Bottom 
 				title={t('getstarted.title')}
 				enhancedWords={t('getstarted.enhance')}
+				locale={locale}
 			/>
 			</FadeInSection>
 			<Footer/>

@@ -9,7 +9,8 @@ interface IPricing {
 
 const Pricing: React.FC<IPricing> = ({ locale }) => {
 	unstable_setRequestLocale(locale);
-	const t = useTranslations('landing');
+	const t = useTranslations('landing.pricing');
+	const l = useTranslations('landing');
 
 	const premiumFeature = [
 		"Secure Singke Sign-On (SSO)",
@@ -46,8 +47,8 @@ const Pricing: React.FC<IPricing> = ({ locale }) => {
 				<NavBar current='pricing' locale={locale} />
 				<FadeInSection>
 				<HeroHeader
-					title={t('pricing.tagline.title')}
-					enhancedWords={t('pricing.tagline.enhance')}
+					title={t('tagline.title')}
+					enhancedWords={t('tagline.enhance')}
 					description=""
 					integration="msteams"
 					noButtons
@@ -110,10 +111,9 @@ const Pricing: React.FC<IPricing> = ({ locale }) => {
 			</div>
 			<FadeInSection>
 			<Bottom 
-				title="Get Started with"
-				enhancedWords='Revoluspace'
-				noButtons
-				newsletter
+				title={l('home.getstarted.title')}
+				enhancedWords={l('home.getstarted.enhance')}
+				locale={locale}
 			/>
 			</FadeInSection>
 			<Footer/>

@@ -10,6 +10,7 @@ interface IMSteams {
 const MSteams: React.FC<IMSteams> = ({ locale }) => {
 	unstable_setRequestLocale(locale);
 	const t = useTranslations('landing.msteams');
+	const l = useTranslations('landing');
 
 	return (
 		<div className="max-w-[100vw] overflow-hidden dark:bg-gray-800">
@@ -149,8 +150,9 @@ const MSteams: React.FC<IMSteams> = ({ locale }) => {
 			</div>
 			<FadeInSection>
 			<Bottom 
-				title="Get Started with"
-				enhancedWords='Revoluspace'
+				title={l('home.getstarted.title')}
+				enhancedWords={l('home.getstarted.enhance')}
+				locale={locale}
 			/>
 			</FadeInSection>
 			<Footer/>
