@@ -138,36 +138,42 @@ const Slack: React.FC<ISlack> = ({ locale }) => {
 						desc={t('gallerycards.card_0.description')}
 						style='vertical'
 						noImage
+						className='w-full'
 					/>
 					<Card 
 						title={t('gallerycards.card_1.title')}
 						desc={t('gallerycards.card_1.description')}
 						style='vertical'
 						noImage
+						className='w-full'
 					/>
 					<Card 
 						title={t('gallerycards.card_2.title')}
 						desc={t('gallerycards.card_2.description')}
 						style='vertical'
 						noImage
+						className='w-full'
 					/>
 					<Card 
 						title={t('gallerycards.card_3.title')}
 						desc={t('gallerycards.card_3.description')}
 						style='vertical'
 						noImage
+						className='w-full'
 					/>
 					<Card 
 						title={t('gallerycards.card_4.title')}
 						desc={t('gallerycards.card_4.description')}
 						style='vertical'
 						noImage
+						className='w-full'
 					/>
 					<Card 
 						title={t('gallerycards.card_5.title')}
 						desc={t('gallerycards.card_5.description')}
 						style='vertical'
 						noImage
+						className='w-full'
 					/>
 				</div>
 				</FadeInSection>

@@ -456,10 +456,15 @@
 		]
 	  },
 	  "contact": {
-		"title": "Contact us",
+		"tagline": {
+			"title": "Contactez-nous pour ",
+			"enhance": "commencer"
+		},
 		"seo": {
-		  "title": "Revoluspace | Contact-us"
-		}
+		  "title": "Revoluspace | Nous contacter",
+		  "description": "Vous avez un problème technique ? Vous souhaitez nous faire part de vos commentaires sur une fonction bêta ? Vous avez besoin de détails sur notre plan d'affaires ? N'hésitez pas à nous contacter"
+		},
+		"details": "Vous avez un problème technique ? Vous souhaitez nous faire part de vos commentaires sur une fonction bêta ? Vous avez besoin de détails sur notre plan d'affaires ? N'hésitez pas à nous contacter."
 	  }
 	}
 }

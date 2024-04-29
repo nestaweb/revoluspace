@@ -17,9 +17,9 @@ const Contact: React.FC<IContact> = ({ locale }) => {
 			<div className="relative z-20">
 				<NavBar current='contact' locale={locale} />
 				<HeroHeader
-					title="Contact us to"
-					enhancedWords='Get Started'
-					description="Got a technical issue? Want to send feedback about a beta feature? Need details about our Business plan? Let us know."
+					title={t('contact.tagline.title')}
+					enhancedWords={t('contact.tagline.enhance')}
+					description={t('contact.details')}
 					noButtons
 					locale={locale}
 				/>

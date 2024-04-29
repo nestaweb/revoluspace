@@ -471,21 +471,14 @@
 		]
 	  },
 	  "contact": {
-		"title": "Contact us",
+		"tagline": {
+			"title": "Contact us to ",
+			"enhance": "Get Started"
+		},
 		"seo": {
 		  "title": "Revoluspace | Contact-us"
 		},
-		"contactOk": {
-		  "title": "Your Form has been submitted",
-		  "message": "Thank you for contacting us, our team will get back to you shortly.",
-		  "btnText": "Back home"
-		}
-	  },
-	  "demo": {
-		"seo": {
-		  "title": "Revoluspace | Try Revoluspace for free",
-		  "description": "Start a free trial in minutes · No credit card required."
-		}
+		"details": "Got a technical issue? Want to send feedback about a beta feature? Need details about our Business plan? Let us know."
 	  }
 	}
 }

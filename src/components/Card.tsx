@@ -128,7 +128,7 @@ const SoftCard: React.FC<ICardProps> = ({ title, desc, imgUrl, direction, classN
 				<div className='min-h-[50vh] min-w-[50vh] md:rounded-lg bg-gradient-to-b from-brand-violet-700 to-indigo-400'></div>
 			}
 			<div className="flex flex-col justify-between leading-normal w-5/6 lg:w-[35vw] md:h-auto">
-				<p className="mb-2 text-2xl lg:text-4xl font-semibold text-gray-900 dark:text-brand-white capitalize">{title} <span className='purple-gradient'>{lastWord}</span></p>
+				<p className="mb-2 text-2xl lg:text-4xl font-semibold text-gray-900 dark:text-brand-white">{title} <span className='purple-gradient'>{lastWord}</span></p>
 				<p className="mb-3 text-lg font-normal text-gray-700 dark:text-gray-400">{desc}</p>
 				<div className="flex flex-col items-center lg:flex-row gap-4 mt-5">
 					<IntegrationButton
