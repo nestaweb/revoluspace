@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { NavBar, HeroHeader, Card, Bottom, Footer } from '@/components/components';
+import { NavBar, HeroHeader, Card, Bottom, Footer, HubSpotForm } from '@/components/components';
 import {useTranslations} from 'next-intl';
 import {unstable_setRequestLocale} from 'next-intl/server';
 import ContactForm from './ContactForm';
@@ -52,9 +52,9 @@ const Contact: React.FC<IContact> = ({ locale }) => {
 				</div>
 			</div>
 			<div className='w-[90vw] lg:w-3/6 mx-auto -translate-y-[17.5vh] z-20 relative'>
-				{/* <HubspotProvider>
-					<ContactForm locale={locale} />
-				</HubspotProvider> */}
+				{/* <HubspotProvider> */}
+					<HubSpotForm locale={locale}  />
+				{/* </HubspotProvider> */}
 				
 				{/* <form action="#" className="space-y-8 z-10 relative">
 					<div className='flex gap-4'>
