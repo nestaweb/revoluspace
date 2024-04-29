@@ -13,32 +13,32 @@ const Pricing: React.FC<IPricing> = ({ locale }) => {
 	const l = useTranslations('landing');
 
 	const premiumFeature = [
-		"Secure Singke Sign-On (SSO)",
-		"Unlimited users",
-		"Weekly planning",
-		"Desk booking",
-		"Interactive floorplans",
-		"Full Office analytics",
-		"Support assistance",
+		t('plans.plan_0.features.feature_0'),
+		t('plans.plan_0.features.feature_1'),
+		t('plans.plan_0.features.feature_2'),
+		t('plans.plan_0.features.feature_3'),
+		t('plans.plan_0.features.feature_4'),
+		t('plans.plan_0.features.feature_5'),
+		t('plans.plan_0.features.feature_6'),
 	]
 
 	const premiumNonFeature = [
-		"Custom integrations",
-		"Custom data privacy configuration",
-		"Check-in options",
+		t('plans.plan_0.notIncluded.feature_0'),
+		t('plans.plan_0.notIncluded.feature_1'),
+		t('plans.plan_0.notIncluded.feature_2'),
 	]
 
 	const entrepriseFeature = [
-		"Secure Singke Sign-On (SSO)",
-		"Unlimited users",
-		"Weekly planning",
-		"Desk booking",
-		"Interactive floorplans",
-		"Full Office analytics",
-		"Support assistance",
-		"Custom integrations",
-		"Custom data privacy configuration",
-		"Check-in options",
+		t('plans.plan_1.features.feature_0'),
+		t('plans.plan_1.features.feature_1'),
+		t('plans.plan_1.features.feature_2'),
+		t('plans.plan_1.features.feature_3'),
+		t('plans.plan_1.features.feature_4'),
+		t('plans.plan_1.features.feature_5'),
+		t('plans.plan_1.features.feature_6'),
+		t('plans.plan_1.features.feature_7'),
+		t('plans.plan_1.features.feature_8'),
+		t('plans.plan_1.features.feature_9')
 	]
 
 	return (
@@ -87,25 +87,25 @@ const Pricing: React.FC<IPricing> = ({ locale }) => {
 			<div className="flex justify-center -translate-y-[25vh] lg:gap-x-[5vw] lg:flex-row flex-col gap-y-8 items-center lg:items-start">
 				<FadeInSection>
 				<Card 
-					title="Standard"
-					desc="Hybrid work solution for growing buisnesses"
+					title={t('plans.plan_0.title')}
+					desc={t('plans.plan_0.description')}
 					style="pricing"
-					price="2"
-					planFrequancy="per user /month"
+					price={t('plans.plan_0.price')}
+					planFrequancy={t('plans.plan_0.planFrequency')}
 					features={premiumFeature}
-					pricingCTAtext="Start Free Trial"
+					pricingCTAtext={t('startfree')}
 					nonFeatures={premiumNonFeature}
 					seeSymbol
 				/>
 				</FadeInSection>
 				<FadeInSection>
 				<Card 
-					title="Entreprise"
-					desc="Comprehensive, fully-customizable space management"
+					title={t('plans.plan_1.title')}
+					desc={t('plans.plan_1.description')}
 					style="pricing"
-					price="On Request"
+					price={t('plans.plan_1.price')}
 					features={entrepriseFeature}
-					pricingCTAtext="Contact Us"
+					pricingCTAtext={t('contact')}
 				/>
 				</FadeInSection>
 			</div>

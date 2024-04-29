@@ -203,7 +203,7 @@ const Home: React.FC<IHome> = ({ locale }) => {
 			</div>
 			<FadeInSection>
 			<div className='w-5/6 lg:w-[90vw] mx-auto flex flex-col gap-y-[5vh] mt-[10vh] lg:mt-[15vh]'>
-				<p className='text-3xl lg:text-5xl font-semibold text-center purple-gradient uppercase'>{t('faqs.tagline.title')}<span className='purple-gradient capitalize'>{t('faqs.tagline.enhance')}</span></p>
+				<p className='text-3xl lg:text-5xl font-semibold text-center'>{t('faqs.tagline.title')}<span className='purple-gradient capitalize'>{t('faqs.tagline.enhance')}</span></p>
 				<p className='text-center'>{t('faqs.details')}</p>
 				<Accordion 
 					qa={faqs}

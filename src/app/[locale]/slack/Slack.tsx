@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { NavBar, HeroHeader, Card, Bottom, Footer, FadeInSection } from '@/components/components';
+import { NavBar, HeroHeader, Card, Bottom, Footer, FadeInSection, Accordion } from '@/components/components';
 import {useTranslations} from 'next-intl';
 import {unstable_setRequestLocale} from 'next-intl/server';
 
@@ -11,6 +11,29 @@ const Slack: React.FC<ISlack> = ({ locale }) => {
 	unstable_setRequestLocale(locale);
 	const t = useTranslations('landing.slack');
 	const l = useTranslations('landing');
+
+	const faqs = [
+		{
+			question: t('faqs.qa.qa_0.question'),
+			answer: t('faqs.qa.qa_0.answer')
+		},
+		{
+			question: t('faqs.qa.qa_1.question'),
+			answer: t('faqs.qa.qa_1.answer')
+		},
+		{
+			question: t('faqs.qa.qa_2.question'),
+			answer: t('faqs.qa.qa_2.answer')
+		},
+		{
+			question: t('faqs.qa.qa_3.question'),
+			answer: t('faqs.qa.qa_3.answer')
+		},
+		{
+			question: t('faqs.qa.qa_4.question'),
+			answer: t('faqs.qa.qa_4.answer')
+		}
+	]
 	return (
 		<div className="max-w-[100vw] overflow-hidden dark:bg-gray-800">
 			<div className="relative z-20">
@@ -42,29 +65,29 @@ const Slack: React.FC<ISlack> = ({ locale }) => {
 			</div>
 			<div className="w-5/6 mx-auto flex flex-col gap-y-[15vh]">
 				<FadeInSection>
-				<p className="text-3xl lg:text-5xl text-center font-semibold">{t('easytouse.title')}<span className='purple-gradient capitalize'>{t('easytouse.enhance')}</span></p>
+				<p className="text-3xl lg:text-5xl text-center font-semibold">{t('advantages.title')}<span className='purple-gradient capitalize'>{t('advantages.enhance')}</span></p>
 				</FadeInSection>
 				<div className="flex gap-x-[5vw] flex-col lg:flex-row gap-y-8">
 				<FadeInSection>
 					<Card 
-						title="Get together in the office"
-						desc="No more commute regrets, by allowing people to schedule their week and see when their colleagues are coming in (deskbird)."
+						title={t('hor_cards.card_0.title')}
+						desc={t('hor_cards.card_0.description')}
 						imgUrl="/Demo MS Teams.svg"
 						style='vertical'
 					/>
 				</FadeInSection>
 				<FadeInSection>
 					<Card 
-						title="Simplify office management"
-						desc="No more commute regrets, by allowing people to schedule their week and see when their colleagues are coming in (deskbird)."
+						title={t('hor_cards.card_1.title')}
+						desc={t('hor_cards.card_1.description')}
 						imgUrl="/Demo MS Teams.svg"
 						style='vertical'
 					/>
 				</FadeInSection>
 				<FadeInSection>
 					<Card 
-						title="Downsize your office with confidence"
-						desc="No more commute regrets, by allowing people to schedule their week and see when their colleagues are coming in (deskbird)."
+						title={t('hor_cards.card_2.title')}
+						desc={t('hor_cards.card_2.description')}
 						imgUrl="/Demo MS Teams.svg"
 						style='vertical'
 					/>
@@ -72,83 +95,92 @@ const Slack: React.FC<ISlack> = ({ locale }) => {
 				</div>
 			</div>
 			<FadeInSection>
-			<p className="text-3xl lg:text-5xl text-center font-semibold mt-[25vh] mb-[15vh] w-5/6 mx-auto">Easy-to-use solution for <span className='purple-gradient'>Hybrid Work</span></p>
+			<p className="text-3xl lg:text-5xl text-center font-semibold mt-[25vh] mb-[15vh] w-5/6 mx-auto">{t('easytouse.title')}<span className='purple-gradient capitalize'>{t('easytouse.enhance')}</span></p>
 			</FadeInSection>
 			<div className="flex flex-col gap-y-[15vh] my-10 w-[90vw] mx-auto">
 			<FadeInSection>
 				<Card 
-					title="Faster weekly planning"
-					desc="Visualize, for each day of the week, which teammates and favorite co-workers are coming into the office"
+					title={t('ver_cards.card_0.title')}
+					desc={t('ver_cards.card_0.description')}
 					imgUrl="/Demo MS Teams.svg"
-					IntegrationButtonText='Learn More'
+					IntegrationButtonText={t('learnmore')}
 					IntegrationButtonLink={{ slack: '/slack', msteams: '/msteams' }}
 				/>
 			</FadeInSection>
 			<FadeInSection>
 				<Card 
-					title="Desk booking in just 2 clicks"
-					desc="Visualize, for each day of the week, which teammates and favorite co-workers are coming into the office"
+					title={t('ver_cards.card_1.title')}
+					desc={t('ver_cards.card_1.description')}
+					imgUrl="/Demo MS Teams.svg"
+					IntegrationButtonText={t('learnmore')}
 					direction="reverse"
-					imgUrl="/Demo MS Teams.svg"
-					IntegrationButtonText='Learn More'
 					IntegrationButtonLink={{ slack: '/slack', msteams: '/msteams' }}
 				/>
 			</FadeInSection>
 			<FadeInSection>
 				<Card 
-					title="Rich Analytics"
-					desc="Visualize, for each day of the week, which teammates and favorite co-workers are coming into the office"
+					title={t('ver_cards.card_2.title')}
+					desc={t('ver_cards.card_2.description')}
 					imgUrl="/Demo MS Teams.svg"
-					IntegrationButtonText='Learn More'
+					IntegrationButtonText={t('learnmore')}
 					IntegrationButtonLink={{ slack: '/slack', msteams: '/msteams' }}
 				/>
 			</FadeInSection>
 			</div>
 			<div className="flex justify-center w-[90vw] mx-auto flex-col">
 				<FadeInSection>
-				<p className="text-3xl lg:text-5xl text-center font-semibold mt-[25vh] mb-[15vh] w-5/6 mx-auto">Easy-to-use solution for <span className='purple-gradient'>Hybrid Work</span></p>
+				<p className="text-3xl lg:text-5xl text-center font-semibold mt-[25vh] mb-[15vh] w-5/6 mx-auto">{t('manageyourflexible.title')}<span className='purple-gradient'>{t('manageyourflexible.enhance')}</span></p>
 				</FadeInSection>
 				<FadeInSection>
 				<div className="flex flex-wrap mx-auto justify-center gap-3">
 					<Card 
-						title="Single Sign-On (SSO)"
-						desc="No more commute regrets, by allowing people to schedule their week and see when their colleagues are coming in (deskbird)."
+						title={t('gallerycards.card_0.title')}
+						desc={t('gallerycards.card_0.description')}
 						style='vertical'
 						noImage
 					/>
 					<Card 
-						title="User provisionning"
-						desc="No more commute regrets, by allowing people to schedule their week and see when their colleagues are coming in (deskbird)."
+						title={t('gallerycards.card_1.title')}
+						desc={t('gallerycards.card_1.description')}
 						style='vertical'
 						noImage
 					/>
 					<Card 
-						title="Interactive floorplans editor"
-						desc="No more commute regrets, by allowing people to schedule their week and see when their colleagues are coming in (deskbird)."
+						title={t('gallerycards.card_2.title')}
+						desc={t('gallerycards.card_2.description')}
 						style='vertical'
 						noImage
 					/>
 					<Card 
-						title="Roles and permissions management"
-						desc="No more commute regrets, by allowing people to schedule their week and see when their colleagues are coming in (deskbird)."
+						title={t('gallerycards.card_3.title')}
+						desc={t('gallerycards.card_3.description')}
 						style='vertical'
 						noImage
 					/>
 					<Card 
-						title="Hybrid work policy"
-						desc="No more commute regrets, by allowing people to schedule their week and see when their colleagues are coming in (deskbird)."
+						title={t('gallerycards.card_4.title')}
+						desc={t('gallerycards.card_4.description')}
 						style='vertical'
 						noImage
 					/>
 					<Card 
-						title="Customer support"
-						desc="No more commute regrets, by allowing people to schedule their week and see when their colleagues are coming in (deskbird)."
+						title={t('gallerycards.card_5.title')}
+						desc={t('gallerycards.card_5.description')}
 						style='vertical'
 						noImage
 					/>
 				</div>
 				</FadeInSection>
 			</div>
+			<FadeInSection>
+			<div className='w-5/6 lg:w-[90vw] mx-auto flex flex-col gap-y-[5vh] mt-[10vh] lg:mt-[15vh]'>
+				<p className='text-3xl lg:text-5xl font-semibold text-center'>{t('faqs.tagline.title')}<span className='purple-gradient capitalize'>{t('faqs.tagline.enhance')}</span></p>
+				<p className='text-center'>{t('faqs.details')}</p>
+				<Accordion 
+					qa={faqs}
+				/>
+			</div>
+			</FadeInSection>
 			<FadeInSection>
 			<Bottom 
 				title={l('home.getstarted.title')}

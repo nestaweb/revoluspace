@@ -15,7 +15,8 @@ const ContactForm: React.FC<IContactForm> = ({locale}) => {
 				: 'b994f17b-5539-4642-af26-42e025cd2c86',
 		target: `#my-hubspot-form`,
     });
-
+	console.log(loaded, error, formCreated);
+	
     return (
         <div id="my-hubspot-form" />
     )

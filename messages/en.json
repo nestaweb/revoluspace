@@ -105,8 +105,8 @@
 		},
 		"faqs": {
 			"tagline": {
-				"title": "Frequently Asked Questions",
-				"enhance": "about Revoluspace"
+				"title": "Frequently Asked Questions about ",
+				"enhance": "Revoluspace"
 			},
 			"details" : "A simple, robust and powerful solution for achieving success at the enterprise level. We protect your data and offer the necessary information and tools to fulfill your privacy obligations.",
 			"qa": {
@@ -131,34 +131,218 @@
 	  },
 	  "msteams": {
 		"seo": {
-		  "title": "Revoluspace | Desk booking app integrated in MS Teams",
+		  "title": "Revoluspace | Seamless desk booking with Microsoft Teams integration",
 		  "description":
-			"Explore the all-in-one solution to optimize office collaboration and flexible office management, fully integrated into Microsoft Teams"
+			"Enhance collaboration and streamline office management with our Microsoft Teams Desk Booking integration. Optimize workspace utilization, reduce costs, and boost productivity in your hybrid workplace"
 		},
 		"tagline": {
-			"title": "Desk booking app integrated in ",
-			"enhance": "MS Teams"
+			"title": "Seamless desk booking with ",
+			"enhance": "Microsoft Teams integration"
 		},
 		"details":
-		  "Explore the comprehensive solution for seamless office collaboration and flexible office management, entirely integrated into Microsoft Teams",
-		  "easytouse": {
-			  "title": "Easy-to-use solution for ",
-			  "enhance": "hybrid work"
-		  }
+		  "Enhance collaboration and streamline office management with our Microsoft Teams Desk Booking integration. Optimize workspace utilization, reduce costs, and boost productivity in your hybrid workplace",
+		
+		"advantages" : {
+			"title": "The advantages of our ",
+			"enhance": "hybrid work solution"
+		},
+		"hor_cards": {
+			"card_0": {
+				"title": "Get together in the office",
+				"description": "Eliminate commute regrets by enabling people to plan their week and see when their teammates come to the office."
+			},
+			"card_1": {
+				"title": "Simplify office management",
+				"description": "Improve your office experience by allowing people to reserve a flexible workspace in advance, all inside MS Teams."
+			},
+			"card_2": {
+				"title": "Downsize your office with confidence",
+				"description": "Manage your workspaces more efficiently with space insights such as utilization data and occupancy trends."
+			}
+		},
+		"allinonesolution": {
+			"title": "The all-in-one solution, living in ",
+			"enhance": "Microsoft Teams"
+		},
+		"ver_cards": {
+			"card_0": {
+				"title": "Faster weekly planning",
+				"description": "See who will be in the office each day of the week, and benefit from visibility to plan your week and coordinate team in-office days."
+			},
+			"card_1": {
+				"title": "Desk booking in 2 clicks",
+				"description": "Hot desk booking will allow you to see on your floor plan where your closest colleagues are sitting and book a desk accordingly."
+			},
+			"card_2": {
+				"title": "Office usage analytics",
+				"description": "Make better decisions about your real-estate costs with comprehensive workspace analytics allowing you to understand space usage."
+			}
+		},
+		"manageyourflexible": {
+			"title": "Manage your flexible office, without leaving ",
+			"enhance": "Microsoft Teams"
+		},
+		"gallerycards": {
+			"card_0": {
+				"title": "3 minutes setup",
+				"description": "Forget complex solutions, our Microsoft Teams desk booking solution is set up in just few minutes."
+			},
+			"card_1": {
+				"title": "Easily invite co-workers",
+				"description": "Invite co-workers directly from your Microsoft Teams Workspace."
+			},
+			"card_2": {
+				"title": "Floor plan editor",
+				"description": "Our floor plan editor lets you customize your workspaces to suit your needs."
+			},
+			"card_3": {
+				"title": "Recurring booking",
+				"description": "Save time by integrating your weekly workplace routine."
+			},
+			"card_4": {
+				"title": "Rôles and permissions",
+				"description": "Revoluspace enables to define roles and permissions to customize access according to specific needs."
+			},
+			"card_5": {
+				"title": "Hybrid work policy",
+				"description": "Seamlessly integrate your remote working policy and attendance rules."
+			}
+		},
+		"faqs": {
+			"tagline": {
+				"title": "Frequently Asked Questions about ",
+				"enhance": "MS Teams integration"
+			},
+			"details" : "Do you have questions about our remote work and flex office management software? Find some answers below",
+			"qa": {
+				"qa_0":{
+					"question": "What is a desk booking system integrated into MS Teams app?",
+					"answer": "Since the widespread adoption of remote work, collaborative tools have become essential, particularly for meetings. The Microsoft Teams Desk Booking integration enables users to see who is coming to the offiffice and book desks without leaving the Microsoft Teams app."
+				},
+				"qa_1":{
+					"question": "Benefifits of using a Desk Booking System in Microsoft Teams",
+					"answer": "Our Microsoft Teams Desk Booking integration delivers improved time to value and ROI by allowing users to seamlessly reserve workspaces without switching between multiple platforms. This streamlined process saves time, reduces friction, improves security and eliminates implementation costs."
+				},
+				"qa_2":{
+					"question": "Could I import users from my Microsoft Teams Workspace?",
+					"answer": "With our workspace solution, you can import all users or an entire channel from your Microsoft Teams Workspace with just one click. This streamlined process distinguishes us from competitors who often have complex procedures for user provisioning."
+				},
+				"qa_3":{
+					"question": "How does the trial period work ?",
+					"answer": "Experience Revoluspace free for 14 days without entering credit card details by clicking on the “Add to Teams” buttons on this webpage. The onboarding process is quick, taking just 3 minutes."
+				},
+				"qa_4":{
+					"question": "How is my monthly bill calculated ?",
+					"answer": "After the free trial, you will only be charged for each active Revoluspace user, i.e. for users who have set a status during the month being charged."
+				}
+			}
+		}
 	  },
-	  "slack": {
+	"slack": {
 		"seo": {
-		  "title": "Revoluspace | Desk booking app integrated in Slack",
-		  "description": "Encourage your teams to connect and optimize your spaces, all inside Slack"
+		  "title": "Revoluspace | The workplace plaform integrated in Slack",
+		  "description": "Boost collaboration and simplify office management with our Slack Desk Booking integration. Optimize workspace usage, decrease real estate costs, and enhance productivity in your hybrid workplace."
 		},
 		"tagline": {
-			"title": "Desk booking app integrated in ",
+			"title": "The workplace plaform integrated in ",
 			"enhance": "Slack"
 		},
-		"details": "Encourage your teams to connect and optimize your spaces, all inside Slack",
+		"details": "Boost collaboration and simplify office management with our Slack Desk Booking integration. Optimize workspace usage, decrease real estate costs, and enhance productivity in your hybrid workplace.",
+		"learnmore": "Learn more",
+		"advantages" : {
+			"title": "The advantages of our ",
+			"enhance": "hybrid work solution"
+		},
+		"hor_cards": {
+			"card_0": {
+				"title": "Help people connect",
+				"description": "Hybrid work makes it difficult to know who is working from where. Revoluspace brings visibility into who comes to the office and help your team to get together."
+			},
+			"card_1": {
+				"title": "Simplify office management",
+				"description": "Enhance your office experience by allowing people to reserve a flexible workspace in advance and to find their colleagues faster, all inside Slack."
+			},
+			"card_2": {
+				"title": "Understand space usage",
+				"description": "Get more from your workspace with office space monitoring and utilization technology designed to maximize both real estate efficiency and productivity."
+			}
+		},
 		"easytouse": {
 			"title": "Easy-to-use solution for ",
 			"enhance": "hybrid work"
+		},
+		"ver_cards": {
+			"card_0": {
+				"title": "Increase team connections",
+				"description": "Visualize who comes to the office each day to better schedule your week and coordinate team in-office days."
+			},
+			"card_1": {
+				"title": "Simple desk booking",
+				"description": "Hot desk booking allows you to see where your closest colleagues are seated and book a desk in just two clicks."
+			},
+			"card_2": {
+				"title": "Rich analytics",
+				"description": "Revoluspace enables you to understand space usage through data analytics, closely monitor workspace utilization, and reduce costs."
+			}
+		},
+		"manageyourflexible": {
+			"title": "Manage your flexible office, without leaving ",
+			"enhance": "Slack"
+		},
+		"gallerycards": {
+			"card_0": {
+				"title": "3 minutes setup",
+				"description": "Forget complex solutions, our Slack desk booking solution is set up in just few minutes."
+			},
+			"card_1": {
+				"title": "Easily invite co-workers",
+				"description": "Invite co-workers directly from your Slack Workspace."
+			},
+			"card_2": {
+				"title": "Multi location",
+				"description": "Interactive floor plan editor."
+			},
+			"card_3": {
+				"title": "Recurring booking",
+				"description": "Save time by integrating your weekly workplace routine."
+			},
+			"card_4": {
+				"title": "Rôles and permissions",
+				"description": "Revoluspace enables to define roles and permissions to customize access according to specific needs."
+			},
+			"card_5": {
+				"title": "Hybrid work policy",
+				"description": "Seamlessly integrate your remote working policy and attendance rules."
+			}
+		},
+		"faqs": {
+			"tagline": {
+				"title": "Frequently Asked Questions about ",
+				"enhance": "Slack integration"
+			},
+			"details" : "Do you have questions about our remote work and flex office management software? Find some answers below",
+			"qa": {
+				"qa_0":{
+					"question": "What is a desk booking system integrated into Slack app?",
+					"answer": "Since the widespread adoption of remote work, collaborative tools have become essential, particularly for meetings. The Slack Desk Booking integration enables users to see who is coming to the office and book desks without leaving the Slack app."
+				},
+				"qa_1":{
+					"question": "Benefits of using a Desk Booking System in Slack",
+					"answer": "Our Slack Desk Booking integration delivers improved time to value and ROI by allowing users to seamlessly reserve workspaces without switching between multiple platforms. This streamlined process saves time, reduces friction, improves security and eliminates implementation costs."
+				},
+				"qa_2":{
+					"question": "Could I import users from my Slack Workspace?",
+					"answer": "With our workspace solution, you can import all users or an entire channel from your Slack Workspace with just one click. This streamlined process distinguishes us from competitors who often have complex procedures for user provisioning."
+				},
+				"qa_3":{
+					"question": "How does the trial period work ?",
+					"answer": "Experience Revoluspace free for 14 days without entering credit card details by clicking on the “Add to Slack” buttons on this webpage. The onboarding process is quick, taking just 3 minutes."
+				},
+				"qa_4":{
+					"question": "How is my monthly bill calculated ?",
+					"answer": "After the free trial, you will only be charged for each active Revoluspace user, i.e. for users who have set a status during the month being charged."
+				}
+			}
 		}
 	  },
 	  "pricing": {
@@ -167,14 +351,57 @@
 		  "description": "No surprises, no setup fees, no minimum. Simply choose a plan"
 		},
 		"tagline": {
-			"title": "Eliminate the back and forth, bring your team ",
-			"enhance": "together"
+			"title": "A transparent and unbattable ",
+			"enhance": "pricing plan"
 		},
 		"details_1": "Try Revoluspace for free.",
 		"details_2": "No credit card required.",
 		"item_1": "No hidden fees",
 		"item_2": "No setup fees",
-		"item_3": "No minimum"
+		"item_3": "No minimum",
+		"plans": {
+			"plan_0": {
+				"title": "Standard",
+				"description": "Hybrid work solution for growing businesses",
+				"price": "2",
+				"planFrequency": "user/month",
+				"features": {
+					"feature_0": "Secure Single Sign On (SSO) with Azure and Slack",
+					"feature_1": "Unlimited users",
+					"feature_2": "Weekly planning",
+					"feature_3": "Desk booking",
+					"feature_4": "Interactive floor plans",
+					"feature_5": "Full Office analytics",
+					"feature_6": "Support assistance"
+				},
+				"notIncluded": {
+					"feature_0": "Custom integrations",
+					"feature_1": "Custom data privacy configuration",
+					"feature_2": "Check in options"
+				}
+			},
+			"plan_1": {
+				"title": "Entreprise",
+				"description": "Comprehensive, fully-customizable space management",
+				"price": "On Request",
+				"planFrequency": "",
+				"features": {
+					"feature_0": "Secure Single Sign On (SSO) with Azure and Slack",
+					"feature_1": "Unlimited users",
+					"feature_2": "Weekly planning",
+					"feature_3": "Desk booking",
+					"feature_4": "Interactive floor plans",
+					"feature_5": "Full Office analytics",
+					"feature_6": "Support assistance",
+					"feature_7": "Custom integrations",
+					"feature_8": "Custom data privacy configuration",
+					"feature_9": "Check in options"
+				},
+				"notIncluded": {}
+			}
+		},
+		"startfree": "Start free trial",
+		"contact": "Contact us"
 	  },
 	  "legal": {
 		"seo": {

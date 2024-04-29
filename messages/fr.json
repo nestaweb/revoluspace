@@ -24,7 +24,7 @@
 		"addto": "Ajoutez à",
 		"about": "A propos de",
 		"getstarted": {
-			"title": "Commencez dès aujourd'hui avec ",
+			"title": "Essayez gratuitement ",
 			"enhance": "Revoluspace"
 		},
 		"noConditions_1": "Aucune carte de crédit nécessaire. Commencez gratuitement.",
@@ -131,50 +131,276 @@
 	  },
 	  "msteams": {
 		"seo": {
-		  "title": "Revoluspace | Desk booking app integrated in MS Teams",
+		  "title": "Revoluspace | La réservation de bureaux simplifiée avec l'intégration MS Teams",
 		  "description":
-			"Découvrez la solution tout-en-un qui facilite la collaboration et qui simplifie la gestion flexoffice, entièrement intégrée dans Microsoft Teams"
+			"Facilitez la collaboration et la gestion du Flex-Office avec l’intégration dans Microsoft Teams. Optimisez l'utilisation de l'espace de travail, réduisez les coûts et augmentez la productivité dans votre environnement de travail hybride"
 		},
 		"tagline": {
-			"title": "Solution de réservation de bureaux dans ",
+			"title": "La réservation de bureaux simplifiée avec l'intégration ",
 			"enhance": "MS Teams"
 		},
 		"details":
-		  "Découvrez la solution tout-en-un qui facilite la collaboration et qui simplifie la gestion flexoffice, entièrement intégrée dans Microsoft Teams",
-		  "easytouse": {
-			  "title": "Solution simple à utiliser pour le ",
-			  "enhance": "Flex office "
-		  }
+		  "Facilitez la collaboration et la gestion du Flex-Office avec l’intégration dans Microsoft Teams. Optimisez l'utilisation de l'espace de travail, réduisez les coûts et augmentez la productivité dans votre environnement de travail hybride",
+		"advantages" : {
+			"title": "Les avantages de notre solution de gestion du ",
+			"enhance": "travail hybride"
+		},
+		"hor_cards": {
+			"card_0": {
+				"title": "Simplifiez la collaboration",
+				"description": "Le travail hybride rend la collaboration et la socialisation plus complexe car les employés ne savent pas qui travaille d’où. Revoluspace apporte cette visibilité."
+			},
+			"card_1": {
+				"title": "Facilitez la gestion du Flex Office",
+				"description": "Revoluspace permet d’améliorer l’expérience employé du Flex-Office en permettent aux employés de réserver un bureau partagé en avance et visualiser où travaillent leurs collègues."
+			},
+			"card_2": {
+				"title": "Optimisez vos coûts",
+				"description": "Transformez la gestion de vos espaces grâce à des données précises pour optimiser leur utilisation, maximiser l'efficacité, et éliminer les dépenses inutiles."
+			}
+		},
+		"allinonesolution": {
+			"title": "La solution tout-en-un, entièrement intégrée dans ",
+			"enhance": "Microsoft Teams"
+		},
+		"ver_cards": {
+			"card_0": {
+				"title": "Renforcez les connexions",
+				"description": "Offrez une meilleure visibilité à vos équipes en leur permettant de savoir quels collègues seront au bureau chaque jour de la semaine."
+			},
+			"card_1": {
+				"title": "Réservez simplement un bureau",
+				"description": "Donnez à vos employés la possibilité de visualiser dans quel(s) espace(s) de travail se trouvent leurs collègues et de réserver un bureau en deux clics."
+			},
+			"card_2": {
+				"title": "Optimisez vos coûts",
+				"description": "Transformez la gestion de vos espaces grâce à des informations analytiques (données d’utilisation, tendances...) pour optimiser leur utilisation, maximiser l'efficacité, et éliminer les dépenses inutiles."
+			}
+		},
+		"manageyourflexible": {
+			"title": "Gérez le télétravail et le Flex-Office, sans quitter ",
+			"enhance": "Microsoft Teams"
+		},
+		"gallerycards": {
+			"card_0": {
+				"title": "Installation en 3 minutes",
+				"description": "Oubliez les solutions traditionnelles complexes, notre solution de réservation de bureau Microsoft Teams est configurée en seulement quelques minutes."
+			},
+			"card_1": {
+				"title": "Invitez facilement vos collègues",
+				"description": "Invitez directement vos collègues depuis votre espace de travail Microsoft Teams."
+			},
+			"card_2": {
+				"title": "Éditeur de plan d'étage",
+				"description": "Notre éditeur de plan d'étage vous permet de personnaliser vos espaces de travail selon vos besoins."
+			},
+			"card_3": {
+				"title": "Réservation récurrente",
+				"description": "Gagnez du temps en ayant la possibilité de pouvoir réserver un bureau pour plusieurs semaines."
+			},
+			"card_4": {
+				"title": "Rôles et autorisations",
+				"description": "Revoluspace permet de définir des rôles et des autorisations pour personnaliser l'accès selon des besoins spécifiques."
+			},
+			"card_5": {
+				"title": "Politique de télétravail",
+				"description": "Intégrez de manière transparente votre politique de télétravail et vos règles de présence."
+			}
+		},
+		"faqs": {
+			"tagline": {
+				"title": "FAQ à propos de notre intégration ",
+				"enhance": "MS Teams"
+			},
+			"details" : "Vous avez des questions sur notre logiciel de gestion du travail à distance et du bureau flexible ? Vous trouverez des réponses ci-dessous",
+			"qa": {
+				"qa_0":{
+					"question": "Qu'est-ce qu'un système de réservation de bureaux intégré dans l'application MS Teams ?",
+					"answer": "Depuis l'adoption généralisée du télétravail, les outils collaboratifs sont devenus essentiels, en particulier pour les réunions. L'intégration de la réservation de bureaux dans Microsoft Teams permet aux utilisateurs de voir qui vient au bureau et de réserver des bureaux sans quitter l'application Microsoft Teams."
+				},
+				"qa_1":{
+					"question": "Avantages de l'utilisation d'un logiciel de réservation de bureaux dans Microsoft Teams",
+					"answer": "L'intégration de notre système de réservation de bureaux dans Microsoft Teams offre un meilleur ROI en permettant aux utilisateurs de réserver des espaces de travail de manière transparente sans avoir à naviguer entre plusieurs plateformes. Ce processus rationalisé permet de gagner du temps, de réduire les frictions, d'améliorer la sécurité et d'éliminer les coûts de mise en œuvre."
+				},
+				"qa_2":{
+					"question": "Puis-je importer les utilisateurs directement depuis mon espace de travail Microsoft Teams?",
+					"answer": "Notre solution de gestion des espaces de travail vous permet d’importer tous les utilisateurs ou un canal entier depuis votre espace de travail Microsoft Teams, et tout ceci en un seul clic. Ce processus simplifié nous distingue de nos concurrents qui ont souvent des procédures complexes pour la provision des utilisateurs."
+				},
+				"qa_3":{
+					"question": "Comment fonctionne la période d’essai?",
+					"answer": "Expérimentez Revoluspace gratuitement pendant 14 jours sans saisir les détails de votre carte de crédit en cliquant sur les boutons « Ajouter à Teams » sur cette page web. L’installation est simple et rapide, ne prenant que 3 minutes."
+				},
+				"qa_4":{
+					"question": "Comment est calculée ma facture?",
+					"answer": "Après l'essai gratuit, vous serez facturé uniquement pour chaque utilisateur actif, c'est-à-dire pour les utilisateurs qui ont défini un statut (télétravail, office ou absent) pendant le mois facturé."
+				}
+			}
+		}
 	  },
 	  "slack": {
 		"seo": {
-		  "title": "Revoluspace | Desk booking app integrated in Slack",
-		  "description": "Renforcez les connexions et optimisez l'utilisation des espaces en Flex Office avec notre solution intégrée à Slack"
+		  "title": "Revoluspace | Intégration Slack",
+		  "description": "Renforcez la collaboration et simplifiez la gestion de vos espaces de travail avec notre solution de réservation de bureaux intégrée dans Slack. Optimisez l'utilisation de l'espace de travail, réduisez les coûts immobiliers et améliorez la productivité de votre environnement de travail hybride"
 		},
 		"tagline": {
-			"title": "Solution de réservation de bureaux dans ",
+			"title": "La réservation de bureaux simplifiée avec l'intégration ",
 			"enhance": "Slack"
 		},
-		"details": "Renforcez les connexions et optimisez l'utilisation des espaces en Flex Office avec notre solution intégrée à Slack",
+		"details": "Facilitez la collaboration et la gestion du Flex-Office avec l’intégration dans Slack. Optimisez l'utilisation de l'espace de travail, réduisez les coûts et augmentez la productivité dans votre environnement de travail hybride.",
+		"learnmore": "A propos de",
+		"advantages" : {
+			"title": "Les avantages de notre solution de gestion du ",
+			"enhance": "travail hybride"
+		},
+		"hor_cards": {
+			"card_0": {
+				"title": "Facilitez la coordination des équipes",
+				"description": "Les employés sont souvent frustrés de se déplacer jusqu’au bureau pour s’y retrouver seul. Revoluspace apporte de la visibilité à vos équipes"
+			},
+			"card_1": {
+				"title": "Simplifiez la gestion du flex-office",
+				"description": "Le Flex-Office génère des frustrations. Revoluspace améliore l’expérience employé du Flex Office en permettant de réserver un bureau en avance et de visualiser où se trouvent vos collègues."
+			},
+			"card_2": {
+				"title": "Optimisez vos coûts",
+				"description": "Les dirigeants n’ont souvent pas les bonnes données pour pouvoir optimiser l’utilisation des espaces et réduire leurs coûts."
+			}
+		},
 		"easytouse": {
-			"title": "Solution simple à utiliser pour le ",
-			"enhance": "Flex office "
+			"title": "La solution tout-en-un, entièrement intégrée à  ",
+			"enhance": "Slack"
+		},
+		"ver_cards": {
+			"card_0": {
+				"title": "Simplifiez la collaboration",
+				"description": "Offrez une meilleure visibilité à vos équipes en leur permettant de savoir quels collègues seront au bureau chaque jour de la semaine."
+			},
+			"card_1": {
+				"title": "Réservez simplement un bureau",
+				"description": "Donnez à vos employés la possibilité de visualiser dans quel(s) espace(s) de travail se trouvent leurs collègues et de réserver un bureau en deux clics."
+			},
+			"card_2": {
+				"title": "Optimisez vos coûts",
+				"description": "Pilotez la gestion de vos espaces de travail grâce à des données précises afin d’optimiser leur utilisation et d’éliminer les dépenses inutiles."
+			}
+		},
+		"manageyourflexible": {
+			"title": "Gérez le télétravail et le Flex-Office, sans quitter ",
+			"enhance": "Slack"
+		},
+		"gallerycards": {
+			"card_0": {
+				"title": "Installation en 3 minutes",
+				"description": "Oubliez les solutions traditionnelles complexes, notre solution de réservation de bureau Slack est configurée en seulement quelques minutes."
+			},
+			"card_1": {
+				"title": "Invitez facilement vos collègues",
+				"description": "Invitez directement vos collègues depuis votre espace de travail Slack."
+			},
+			"card_2": {
+				"title": "Éditeur de plan d'étage",
+				"description": "Notre éditeur de plan d'étage vous permet de personnaliser vos espaces de travail selon vos besoins."
+			},
+			"card_3": {
+				"title": "Réservation récurrente",
+				"description": "Gagnez du temps en ayant la possibilité de pouvoir réserver un bureau pour plusieurs semaines."
+			},
+			"card_4": {
+				"title": "Rôles et autorisations",
+				"description": "Revoluspace permet de définir des rôles et des autorisations pour personnaliser l'accès selon des besoins spécifiques."
+			},
+			"card_5": {
+				"title": "Politique de télétravail",
+				"description": "Intégrez de manière transparente votre politique de télétravail et vos règles de présence."
+			}
+		},
+		"faqs": {
+			"tagline": {
+				"title": "FAQ à propos de notre intégration ",
+				"enhance": "Slack"
+			},
+			"details" : "Vous avez des questions sur notre logiciel de gestion du travail à distance et du bureau flexible ? Vous trouverez des réponses ci-dessous",
+			"qa": {
+				"qa_0":{
+					"question": "Qu'est-ce qu'un système de réservation de bureaux intégré dans l'application Slack ?",
+					"answer": "Depuis l'adoption généralisée du télétravail, les outils collaboratifs sont devenus essentiels, en particulier pour les réunions. L'intégration de la réservation de bureaux dans Slack permet aux utilisateurs de voir qui vient au bureau et de réserver des bureaux sans quitter l'application Slack."
+				},
+				"qa_1":{
+					"question": "Avantages de l'utilisation d'un système de réservation de bureaux dans Slack",
+					"answer": "Notre intégration de logiciel de réservation de bureaux dans Slack offre un meilleur ROI en permettant aux utilisateurs de réserver des espaces de travail de manière transparente sans avoir à naviguer entre plusieurs plateformes. Ce processus rationalisé permet de gagner du temps, de réduire les frictions, d'améliorer la sécurité et d'éliminer les coûts de mise en œuvre."
+				},
+				"qa_2":{
+					"question": "Puis-je importer les utilisateurs directement depuis mon espace de travail Slack?",
+					"answer": "Notre solution de gestion des espaces de travail vous permet d’importer tous les utilisateurs ou un canal entier depuis votre espace de travail Slack, et tout ceci en un seul clic. Ce processus simplifié nous distingue de nos concurrents qui ont souvent des procédures complexes pour la provision des utilisateurs."
+				},
+				"qa_3":{
+					"question": "Comment fonctionne la période d’essai?",
+					"answer": "Expérimentez Revoluspace gratuitement pendant 14 jours sans saisir les détails de votre carte de crédit en cliquant sur les boutons « Ajouter à Slack » sur cette page web. L’installation est simple et rapide, ne prenant que 3 minutes."
+				},
+				"qa_4":{
+					"question": "Comment est calculée ma facture?",
+					"answer": "Après l'essai gratuit, vous serez facturé uniquement pour chaque utilisateur actif, c'est-à-dire pour les utilisateurs qui ont défini un statut (télétravail, office ou absent) pendant le mois facturé."
+				}
+			}
 		}
 	  },
 	  "pricing": {
 		"seo": {
-		  "title": "Revoluspace | Plans & Pricing",
+		  "title": "Revoluspace | Offre & Tarifs",
 		  "description": "Pas de frais cachés, pas de frais d'implémentation, pas de minimum. Choisissez simplement le plan qui vous convient."
 		},
 		"tagline": {
-			"title": "Une seule application pour gérer le télétravail et le ",
-			"enhance": "flex office !"
+			"title": "Une offretransparente et ",
+			"enhance": "imbattable"
 		},
 		"details_1": "Essayez Revoluspace gratuitement.",
 		"details_2": "Aucune carte de crédit demandée.",
 		"item_1": "Pas de frais cachés",
 		"item_2": "Pas de frais d'implémentation",
-		"item_3": "Pas de minimum"
+		"item_3": "Pas de minimum",
+		"plans": {
+			"plan_0": {
+				"title": "Standard",
+				"description": "La solution de travail hybride pour les entreprises en croissance",
+				"price": "2",
+				"planFrequency": "utilisateurs/mois",
+				"features": {
+					"feature_0": "Authentification sécurisée SSO avec Azure and Slack",
+					"feature_1": "Nombre d’utilisateurs illimités",
+					"feature_2": "Planification hébdomadaire",
+					"feature_3": "Réservation de bureaux",
+					"feature_4": "Interactive floor plans",
+					"feature_5": "Donnes d’utilisation des espaces",
+					"feature_6": "Assistance réactive"
+				},
+				"notIncluded": {
+					"feature_0": "Des integrations sur mesure",
+					"feature_1": "Configuration de la Data privacy sur mesure",
+					"feature_2": "Check in options"
+				}
+			},
+			"plan_1": {
+				"title": "Entreprise",
+				"description": "Nous ajoutons les intégrations de votre choix selon vos besoins",
+				"price": "Sur Demande",
+				"planFrequency": "",
+				"features": {
+					"feature_0": "Authentification sécurisée SSO avec Azure and Slack",
+					"feature_1": "Nombre d’utilisateurs illimités",
+					"feature_2": "Planification hébdomadaire",
+					"feature_3": "Réservation de bureaux",
+					"feature_4": "Interactive floor plans",
+					"feature_5": "Donnes d’utilisation des espaces",
+					"feature_6": "Assistance réactive",
+					"feature_7": "Des integrations sur mesure",
+					"feature_8": "Configuration de la Data privacy sur mesure",
+					"feature_9": "Check in options"
+				},
+				"notIncluded": {}
+			}
+		},
+		"startfree": "Commencez gratuitement",
+		"contact": "Prendre contact"
 	  },
 	  "legal": {
 		"seo": {
