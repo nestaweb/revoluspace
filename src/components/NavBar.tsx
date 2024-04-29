@@ -1,9 +1,9 @@
+"use client"
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from "react";
-// import { useWindowDimensions } from '@/hooks/useWindowsDimensions';
+import { useWindowDimensions } from '@/hooks/useWindowsDimensions';
 import {useTranslations} from 'next-intl';
-import {unstable_setRequestLocale} from 'next-intl/server';
 
 interface INavBarProps {
 	locale: string;
@@ -15,12 +15,11 @@ const NavBar: React.FC<INavBarProps> = ({ current, locale }) => {
 	const currentColor = "block py-2 px-3 md:p-0 text-brand-violet-700 md:dark:text-violet-500 ease-in-out duration-200";
 	const linkColor = "block py-2 px-3 md:p-0 text-gray-900 rounded md:hover:text-brand-violet-700 md:dark:hover:text-violet-500 dark:text-brand-white dark:hover:text-brand-white dark:border-gray-700 ease-in-out duration-200";
 
-	// const { isPhone } = useWindowDimensions();
-	const isPhone = false;
+	const { isPhone } = useWindowDimensions();
+	// const isPhone = false;
 
-	// const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
-	const isMenuOpen = false;
-	unstable_setRequestLocale(locale);
+	const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
+	// const isMenuOpen = false;
 	const t = useTranslations('landing');
 
 	return (
@@ -53,11 +52,11 @@ const NavBar: React.FC<INavBarProps> = ({ current, locale }) => {
 						</Link>
 						:
 						<>
-							{/* <button onClick={() => setIsMenuOpen(!isMenuOpen)} data-collapse-toggle="navbar-cta" type="button" className="flex flex-col items-end gap-y-[0.55rem] w-9 h-14 justify-center text-sm text-gray-500 rounded-lg md:hidden focus:outline-none dark:text-gray-400 relative z-40" >
+							<button onClick={() => setIsMenuOpen(!isMenuOpen)} data-collapse-toggle="navbar-cta" type="button" className="flex flex-col items-end gap-y-[0.55rem] w-9 h-14 justify-center text-sm text-gray-500 rounded-lg md:hidden focus:outline-none dark:text-gray-400 relative z-40" >
 								<div className={`${isMenuOpen ? "rotate-45" : "rotate-0"} origin-left w-full h-1 bg-brand-gray-500 dark:bg-brand-gray-200 rounded-full ease-linear duration-200`}></div>
 								<div className={`${isMenuOpen ? "opacity-0 translate-x-[100%]" : "opacity-1 translate-x-0"} w-full h-1 bg-brand-gray-500 dark:bg-brand-gray-200 rounded-full ease-linear duration-200`}></div>
 								<div className={`${isMenuOpen ? "-rotate-45" : "rotate-0"} origin-left w-full h-1 bg-brand-gray-500 dark:bg-brand-gray-200 rounded-full ease-linear duration-200`}></div>
-							</button> */}
+							</button>
 							<div className={`${isMenuOpen ? "right-0" : "-right-[100%]"} fixed max-h-screen w-screen h-screen max-w-screen top-0 bg-brand-white dark:bg-gray-800 md:hidden ease-linear duration-200 z-30`} id="navbar-cta">
 								<ul className="flex absolute text-xl top-0 left-0 flex-col items-center justify-center h-full w-full m-0 font-semibold gap-y-8 z-30">
 									<li>

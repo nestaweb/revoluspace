@@ -1,11 +1,15 @@
 import MSteams from "@/app/[locale]/msteams/MSteams";
-import type { Metadata } from "next";
 import {unstable_setRequestLocale} from 'next-intl/server';
-
-export const metadata: Metadata = {
-	title: "Revoluspace | Desk booking app integrated in MS Teams",
-	description: "Boost collaboration and simplify office management with our MS Teams Desk Booking integration. Optimize workspace usage, decrease real estate costs, and enhance productivity in your hybrid workplace.",
-};
+import {getTranslations} from 'next-intl/server';
+ 
+export async function generateMetadata({params: {locale}}: Props) {
+  const t = await getTranslations({locale, namespace: 'landing.msteams.seo'});
+ 
+  return {
+    title: t('title'),
+    description: t('description')
+  };
+}
 
 type Props = {
 	params: {locale: string};

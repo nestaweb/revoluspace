@@ -1,11 +1,16 @@
 import Home from "@/app/[locale]/Home";
 import type { Metadata } from "next";
 import {unstable_setRequestLocale} from 'next-intl/server';
-
-export const metadata: Metadata = {
-	title: "Revoluspace | Simplify hybrid work",
-	description: "Enhance workplace connections and streamline flexible office management with our fully integrated solution within Slack and Microsoft Teams",
-};
+import {getTranslations} from 'next-intl/server';
+ 
+export async function generateMetadata({params: {locale}}: Props) {
+	const t = await getTranslations({locale, namespace: 'landing.home.seo'});
+   
+	return {
+	  title: t('title'),
+	  description: t('description')
+	};
+}
 
 type Props = {
 	params: {locale: string};
