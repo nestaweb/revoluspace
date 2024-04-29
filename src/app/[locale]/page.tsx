@@ -4,7 +4,7 @@ import {unstable_setRequestLocale} from 'next-intl/server';
 
 export const metadata: Metadata = {
 	title: "Revoluspace | Simplify hybrid work",
-	description: "Build stronger connections and improve office experience with a solution entirely integrated within Slack and Microsoft Teams",
+	description: "Enhance workplace connections and streamline flexible office management with our fully integrated solution within Slack and Microsoft Teams",
 };
 
 type Props = {

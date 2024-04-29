@@ -3,8 +3,8 @@ import type { Metadata } from "next";
 import {unstable_setRequestLocale} from 'next-intl/server';
 
 export const metadata: Metadata = {
-	title: "Slack App | Revoluspace",
-	description: "Build stronger connections and improve office experience with a solution entirely integrated within Slack and Microsoft Teams",
+	title: "Revoluspace | Desk booking app integrated in Slack",
+	description: "Boost collaboration and simplify office management with our Slack Desk Booking integration. Optimize workspace usage, decrease real estate costs, and enhance productivity in your hybrid workplace.",
 };
 
 type Props = {
