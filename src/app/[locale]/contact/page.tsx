@@ -1,6 +1,6 @@
 import Contact from "@/app/[locale]/contact/Contact";
-import {unstable_setRequestLocale} from 'next-intl/server';
-import {getTranslations} from 'next-intl/server';
+import {unstable_setRequestLocale, getTranslations} from 'next-intl/server';
+import {NextIntlClientProvider, useMessages} from 'next-intl';
  
 export async function generateMetadata({params: {locale}}: Props) {
 	const t = await getTranslations({locale, namespace: 'landing.contact.seo'});
@@ -18,5 +18,10 @@ type Props = {
 export default function Page({params: {locale}}: Props) {
 
 	unstable_setRequestLocale(locale);
-	return <Contact locale={locale} />
+	const messages = useMessages();
+	return (
+		<NextIntlClientProvider locale={locale} messages={messages}>
+			<Contact locale={locale} />
+		</NextIntlClientProvider>
+	)
 }

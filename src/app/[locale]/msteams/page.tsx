@@ -1,6 +1,6 @@
 import MSteams from "@/app/[locale]/msteams/MSteams";
-import {unstable_setRequestLocale} from 'next-intl/server';
-import {getTranslations} from 'next-intl/server';
+import {unstable_setRequestLocale, getTranslations} from 'next-intl/server';
+import {NextIntlClientProvider, useMessages} from 'next-intl';
  
 export async function generateMetadata({params: {locale}}: Props) {
   const t = await getTranslations({locale, namespace: 'landing.msteams.seo'});
@@ -19,9 +19,10 @@ export default function Page({params: {locale}}: Props) {
 
 	unstable_setRequestLocale(locale);
 
+	const messages = useMessages();
 	return (
-		<>
+		<NextIntlClientProvider locale={locale} messages={messages}>
 			<MSteams locale={locale} />
-		</>
+		</NextIntlClientProvider>
 	)
 }
