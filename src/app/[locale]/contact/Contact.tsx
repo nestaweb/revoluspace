@@ -4,7 +4,7 @@ import {useTranslations} from 'next-intl';
 import {unstable_setRequestLocale} from 'next-intl/server';
 import ContactForm from './ContactForm';
 // import { HubspotProvider } from '@aaronhayes/react-use-hubspot-form';
-import { HubspotProvider } from 'next-hubspot';
+// import { HubspotProvider } from 'next-hubspot';
 
 interface IContact {
 	locale: string;
@@ -52,9 +52,9 @@ const Contact: React.FC<IContact> = ({ locale }) => {
 				</div>
 			</div>
 			<div className='w-[90vw] lg:w-3/6 mx-auto -translate-y-[17.5vh] z-20 relative'>
-				<HubspotProvider>
+				{/* <HubspotProvider>
 					<ContactForm locale={locale} />
-				</HubspotProvider>
+				</HubspotProvider> */}
 				
 				{/* <form action="#" className="space-y-8 z-10 relative">
 					<div className='flex gap-4'>
