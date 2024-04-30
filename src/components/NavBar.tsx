@@ -24,7 +24,7 @@ const NavBar: React.FC<INavBarProps> = ({ current, locale }) => {
 
 	return (
 		<nav className="border-gray-200 absolute w-full top-0 left-0 right-0 py-4">
-			<div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+			<div className="flex flex-wrap items-center justify-between mx-auto p-4">
 				<div className="flex items-center space-x-3 rtl:space-x-reverse relative z-40">
 					<Image 
 						src="/logo-text.svg" 

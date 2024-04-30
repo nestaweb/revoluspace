@@ -27,8 +27,8 @@
 			"title": "Essayez gratuitement ",
 			"enhance": "Revoluspace"
 		},
-		"noConditions_1": "Aucune carte de crédit nécessaire. Commencez gratuitement.",
-		"noConditions_2": "Essai gratuit de 14 jours.",
+		"noConditions_1": "Commencez votre essai gratuit de 14 jours. ",
+		"noConditions_2": "Aucune carte de crédit n’est nécessaire.",
 		"easytouse": {
 			"title": "Facilitez la gestion du ",
 			"enhance": "flex-office et du télétravail"
@@ -87,7 +87,7 @@
 			"text_cards": {
 				"card_0": {
 					"title": "🔒 RGPD",
-					"details": "Our desk booking solution is compliant with GDPR and privacy laws, providing assurance that your actions align with legal standards."
+					"details": "Notre solution de réservation de bureaux est conforme au RGPD et aux lois sur la confidentialité, garantissant que vos actions sont conformes aux normes légales."
 				},
 				"card_1": {
 					"title": "⚖️ Accès Single Sign-On",
@@ -108,7 +108,11 @@
 				"title": "",
 				"enhance": "FAQ"
 			},
-			"details" : "Vous avez des questions sur notre logiciel de gestion du télétravail et du flex office-office? Trouvez des réponses ci-dessous.",
+			"details": 
+			{
+				"title": "Vous avez des questions sur notre logiciel de gestion du télétravail et du flex office-office?",
+				"below": "Trouvez des réponses ci-dessous"
+			},
 			"qa": {
 				"qa_0": {
 					"question": "Y a-t-il des frais d’implémentation ?",
@@ -136,7 +140,7 @@
 			"Facilitez la collaboration et la gestion du Flex-Office avec l’intégration dans Microsoft Teams. Optimisez l'utilisation de l'espace de travail, réduisez les coûts et augmentez la productivité dans votre environnement de travail hybride"
 		},
 		"tagline": {
-			"title": "La réservation de bureaux simplifiée avec l'intégration ",
+			"title": "La réservation de bureaux simplifiée dans ",
 			"enhance": "MS Teams"
 		},
 		"details":
@@ -243,7 +247,7 @@
 		  "description": "Renforcez la collaboration et simplifiez la gestion de vos espaces de travail avec notre solution de réservation de bureaux intégrée dans Slack. Optimisez l'utilisation de l'espace de travail, réduisez les coûts immobiliers et améliorez la productivité de votre environnement de travail hybride"
 		},
 		"tagline": {
-			"title": "La réservation de bureaux simplifiée avec l'intégration ",
+			"title": "La réservation de bureaux simplifiée dans ",
 			"enhance": "Slack"
 		},
 		"details": "Facilitez la collaboration et la gestion du Flex-Office avec l’intégration dans Slack. Optimisez l'utilisation de l'espace de travail, réduisez les coûts et augmentez la productivité dans votre environnement de travail hybride.",
@@ -400,7 +404,8 @@
 			}
 		},
 		"startfree": "Commencez gratuitement",
-		"contact": "Prendre contact"
+		"contact": "Prendre contact",
+		"add": "Ajouter à"
 	  },
 	  "legal": {
 		"seo": {

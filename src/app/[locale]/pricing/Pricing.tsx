@@ -96,6 +96,9 @@ const Pricing: React.FC<IPricing> = ({ locale }) => {
 					pricingCTAtext={t('startfree')}
 					nonFeatures={premiumNonFeature}
 					seeSymbol
+					locale={locale}
+					IntegrationButtonText={t('add')}
+					IntegrationButtonLink={{ slack: ``, msteams: `/${locale}/msteams` }}
 				/>
 				</FadeInSection>
 				<FadeInSection>
@@ -106,6 +109,8 @@ const Pricing: React.FC<IPricing> = ({ locale }) => {
 					price={t('plans.plan_1.price')}
 					features={entrepriseFeature}
 					pricingCTAtext={t('contact')}
+					locale={locale}
+					noButtons
 				/>
 				</FadeInSection>
 			</div>
@@ -114,6 +119,7 @@ const Pricing: React.FC<IPricing> = ({ locale }) => {
 				title={l('home.getstarted.title')}
 				enhancedWords={l('home.getstarted.enhance')}
 				locale={locale}
+				className="-translate-y-[15vh]"
 			/>
 			</FadeInSection>
 			<Footer/>

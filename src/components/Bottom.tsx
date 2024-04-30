@@ -8,15 +8,16 @@ interface IBottomProps {
 	noButtons?: boolean;
 	locale: string;
 	newsletter?: boolean;
+	className?: string;
 }
 
-const Bottom: React.FC<IBottomProps> = ({ title, enhancedWords, noButtons, newsletter, locale }) => {
+const Bottom: React.FC<IBottomProps> = ({ title, enhancedWords, noButtons, newsletter, locale, className }) => {
 
 	unstable_setRequestLocale(locale);
 	const t = useTranslations('landing.home');
 
 	return (
-		<div className="flex flex-col items-center justify-center gap-12 w-[90vw] lg:w-4/6 mx-auto mt-[15vh] pb-[15vh]">
+		<div className={`${className ? className : ""} flex flex-col items-center justify-center gap-12 w-[90vw] lg:w-4/6 mx-auto mt-[15vh] pb-[15vh]`}>
 			<h3 className='text-3xl lg:text-6xl font-semibold text-center '>{title} <span className='purple-gradient'>{enhancedWords}</span></h3>
 				{
 					!noButtons ?
@@ -29,10 +30,10 @@ const Bottom: React.FC<IBottomProps> = ({ title, enhancedWords, noButtons, newsl
 							/>
 							<IntegrationButton
 								text={t('addto')}
-								integration="MS Teams"
+								integration="Teams"
 							/>
 						</div>
-						<p className="text-brand-violet-700 text-center font-medium">{t('noConditions_2')} - {t('noConditions_1')}</p>
+						<p className={"text-brand-violet-700 text-center font-medium"}>{t('noConditions_2')} {locale == "fr" ? <br/> : "-"} <span className={locale == "fr" ? "font-bold" : ""}>{t('noConditions_1')}</span></p>
 					</div>
 					:
 					<></>

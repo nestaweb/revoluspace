@@ -6,7 +6,7 @@ import { useEffect } from 'react';
 
 interface IButtonProps {
 	text: string;
-	integration: 'Slack' | 'MS Teams';
+	integration: 'Slack' | 'MS Teams' | 'Teams';
 	primary?: boolean;
 	className?: string;
 	link?: {
