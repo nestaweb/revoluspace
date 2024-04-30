@@ -1,5 +1,4 @@
 import Home from "@/app/[locale]/Home";
-import type { Metadata } from "next";
 import {unstable_setRequestLocale, getTranslations} from 'next-intl/server';
 import {NextIntlClientProvider, useMessages} from 'next-intl';
  

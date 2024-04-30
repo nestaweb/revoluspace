@@ -64,7 +64,7 @@ const MSteams: React.FC<IMSteams> = ({ locale }) => {
 			</div>
 			<div className="w-5/6 mx-auto flex flex-col gap-y-[15vh]">
 				<FadeInSection>
-				<p className="text-3xl lg:text-5xl text-center font-semibold">{t('advantages.title')}<span className='purple-gradient capitalize'>{t('advantages.enhance')}</span></p>
+				<p className="text-3xl lg:text-5xl text-center font-semibold">{t('advantages.title')}<br/><span className='purple-gradient'>{t('advantages.enhance')}</span></p>
 				</FadeInSection>
 				<div className="flex gap-x-[5vw] flex-col lg:flex-row gap-y-8">
 				<FadeInSection>
@@ -94,7 +94,7 @@ const MSteams: React.FC<IMSteams> = ({ locale }) => {
 				</div>
 			</div>
 			<FadeInSection>
-			<p className="text-3xl lg:text-5xl text-center font-semibold mt-[20vh] lg:mt-[25vh] mb-[10vh] lg:mb-[15vh] w-5/6 mx-auto">{t('allinonesolution.title')}<span className='purple-gradient capitalize'>{t('allinonesolution.enhance')}</span></p>
+			<p className="text-3xl lg:text-5xl text-center font-semibold mt-[20vh] lg:mt-[25vh] mb-[10vh] lg:mb-[15vh] w-5/6 mx-auto">{t('allinonesolution.title')}<br/><span className='purple-gradient'>{t('allinonesolution.enhance')}</span></p>
 			</FadeInSection>
 			<div className="flex flex-col gap-y-[15vh] my-10">
 				<FadeInSection>
@@ -179,7 +179,7 @@ const MSteams: React.FC<IMSteams> = ({ locale }) => {
 			</div>
 			<FadeInSection>
 			<div className='w-5/6 lg:w-[90vw] mx-auto flex flex-col gap-y-[5vh] mt-[10vh] lg:mt-[15vh]'>
-				<p className='text-3xl lg:text-5xl font-semibold text-center'>{t('faqs.tagline.title')}<span className='purple-gradient capitalize'>{t('faqs.tagline.enhance')}</span></p>
+				<p className='text-3xl lg:text-5xl font-semibold text-center'>{t('faqs.tagline.title')}<br/><span className='purple-gradient capitalize'>{t('faqs.tagline.enhance')}</span></p>
 				<p className='text-center'>{t('faqs.details')}</p>
 				<Accordion 
 					qa={faqs}

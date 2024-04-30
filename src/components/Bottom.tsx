@@ -33,7 +33,7 @@ const Bottom: React.FC<IBottomProps> = ({ title, enhancedWords, noButtons, newsl
 								integration="Teams"
 							/>
 						</div>
-						<p className={"text-brand-violet-700 text-center font-medium"}>{t('noConditions_2')} {locale == "fr" ? <br/> : "-"} <span className={locale == "fr" ? "font-bold" : ""}>{t('noConditions_1')}</span></p>
+						<p className={"text-brand-violet-700 text-center font-medium"}><span className={"font-bold"}>{t('noConditions_1')}</span> <br/> {t('noConditions_2')}</p>
 					</div>
 					:
 					<></>

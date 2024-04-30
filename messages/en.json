@@ -15,7 +15,7 @@
 		"seo": {
 		  "title": "Revoluspace | Simplify hybrid work",
 		  "description":
-			"Enhance workplace connections and streamline flexible office management with our fully integrated solution within Slack and Microsoft Teams"
+			"Enhance workplace connections and streamline flexible office management with our fully integrated solution within Slack and Microsoft Teams."
 		},
 		"tagline": {
 			"title": "Simplify",
@@ -24,11 +24,11 @@
 		"addto": "Add to",
 		"about": "About",
 		"getstarted": {
-			"title": "Get started with ",
-			"enhance": "Revoluspace"
+			"title": "Try Revoluspace ",
+			"enhance": "for free"
 		},
-		"noConditions_1": "No credit card needed. Get started for free.",
-		"noConditions_2": "14 day free trial",
+		"noConditions_1": "Start your 14 day free trial today.",
+		"noConditions_2": "No credit card needed. ",
 		"easytouse": {
 			"title": "Easy-to-use solution for ",
 			"enhance": "Flexible workplaces"
@@ -76,7 +76,7 @@
 		},
 		"smartandsecure": {
 			"title": "A smart and secure ",
-			"enhance": "office solution"
+			"enhance": "flex office solution"
 		},
 		"TrustRevoluspace": {
 			"tagline": {
@@ -110,8 +110,8 @@
 			},
 			"details": 
 			{
-				"title": "A simple, robust and powerful solution for achieving success at the enterprise level. We protect your data and offer the necessary information and tools to fulfill your privacy obligations.",
-				"below": ""
+				"title": "Do you have questions about our remote work and flex office management software?",
+				"below": "Find some answers below."
 			},
 			"qa": {
 				"qa_0":{

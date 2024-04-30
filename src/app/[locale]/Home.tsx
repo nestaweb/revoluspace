@@ -84,7 +84,7 @@ const Home: React.FC<IHome> = ({ locale }) => {
 			/>
 			</FadeInSection>
 			<FadeInSection>
-				<p className="text-3xl lg:text-5xl text-center font-semibold mt-0 lg:mt-[5vh] pb-16 lg:pb-[20vh] w-7/12 mx-auto">{t('easytouse.title')}<span className='purple-gradient'>{t('easytouse.enhance')}</span></p>
+				<p className="text-3xl lg:text-5xl text-center font-semibold mt-0 lg:mt-[5vh] pb-16 lg:pb-[20vh] w-7/12 mx-auto">{t('easytouse.title')}<br/><span className='purple-gradient'>{t('easytouse.enhance')}</span></p>
 			</FadeInSection>
 			<div className="flex flex-col gap-y-[15vh] my-6 lg:my-10 w-11/12 mx-auto">
 			<FadeInSection>
@@ -152,7 +152,7 @@ const Home: React.FC<IHome> = ({ locale }) => {
 			</div>
 			<div className='w-5/6 lg:w-[90vw] mx-auto flex flex-col gap-y-[15vh] mt-[15vh]'>
 				<FadeInSection>
-					<p className="text-3xl lg:text-5xl text-center font-semibold">{t('smartandsecure.title')}<span className='purple-gradient'>{t('smartandsecure.enhance')}</span></p>
+					<p className="text-3xl lg:text-5xl text-center font-semibold">{t('smartandsecure.title')}<br/><span className='purple-gradient'>{t('smartandsecure.enhance')}</span></p>
 				</FadeInSection>
 				<FadeInSection>
 				<div className='w-full lg:gap-x-8 lg:w-[80vw] mx-auto flex justify-between flex-col lg:flex-row items-center lg:items-start gap-y-16'>
@@ -167,7 +167,7 @@ const Home: React.FC<IHome> = ({ locale }) => {
 							/>
 							<IntegrationButton
 								text={t('about')}
-								integration="MS Teams"
+								integration="Teams"
 								link={{ slack: `/${locale}/slack`, msteams: `/${locale}/msteams` }}
 							/>
 						</div>
