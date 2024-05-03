@@ -135,7 +135,7 @@ const Slack: React.FC<ISlack> = ({ locale }) => {
 				<p className="text-3xl lg:text-5xl text-center font-semibold mt-[25vh] mb-[15vh] w-5/6 mx-auto">{t('manageyourflexible.title')}<br/><span className='purple-gradient'>{t('manageyourflexible.enhance')}</span></p>
 				</FadeInSection>
 				<FadeInSection>
-				<div className="grid grid-cols-3 mx-auto justify-center gap-3">
+				<div className="flex flex-wrap lg:grid lg:grid-cols-3 mx-auto justify-center gap-3">
 					<Card 
 						title={t('gallerycards.card_0.title')}
 						desc={t('gallerycards.card_0.description')}
