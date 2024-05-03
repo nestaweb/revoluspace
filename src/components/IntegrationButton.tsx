@@ -18,7 +18,7 @@ interface IButtonProps {
 
 const Button: React.FC<IButtonProps> = ({ text, integration, primary, className, link, green }) => {
 
-	const msteamsLink = link?.msteams || "";
+	const msteamsLink = link?.msteams || "https://revoluspace.com/en/contact-msteams";
 	const slackLink = link?.slack || "https://slack.com/oauth/v2/authorize?client_id=2459980417906.3661141926850&scope=chat:write,im:read,im:write,users:read,users:read.email,channels:read&user_scope=email,openid,profile";
 
 	const purplecolors = primary ? "bg-brand-violet-700 text-brand-white hover:bg-brand-violet-700/90 dark:hover:bg-brand-violet-700/70 border-brand-violet-700" : "bg-brand-white text-brand-violet-700 dark:bg-gray-800 dark:text-brand-white dark:hover:bg-gray-700 hover:bg-gray-100 border-brand-violet-700"

@@ -491,7 +491,18 @@
 			"title": "Commencez votre essai  gratuit",
 			"enhance": "maintenant !"
 		},
-		"details": "Configurez l'application en moins de 5 minutes"
+		"l_0": "Configurez l'application en moins de 5 minutes",
+		"l_1": "14 jours d'essai gratuit",
+		"l_2": "Aucune carte de crédit demandée",
+		"startfree": "Commencez votre essai gratuit de 14 jours !",
+		"img_0": {
+			"title": "DRéservez simplement un ",
+			"enhance": "bureau"
+		},
+		"img_1": {
+			"title": "Renforcez les ",
+			"enhance": "connexions"
+		}
 	}
 	}
 }

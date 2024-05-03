@@ -7,7 +7,7 @@ import {useTranslations} from 'next-intl';
 
 interface INavBarProps {
 	locale: string;
-	current?: 'home' | 'slack' | 'msteams' | 'pricing' | 'contact' | 'legal' | 'general-terms' ;
+	current?: 'home' | 'slack' | 'msteams' | 'pricing' | 'contact' | 'legal' | 'general-terms' | 'contact-msteams' ;
 }
 
 const NavBar: React.FC<INavBarProps> = ({ current, locale }) => {

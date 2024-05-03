@@ -506,7 +506,18 @@
 			"title": "Get started free ",
 			"enhance": "now!"
 		},
-		"details": "Get started in as little as 5 minutes"
+		"l_0": "Get started in as little as 5 minutes",
+		"l_1": "14-day free trial",
+		"l_2": "No credit card required",
+		"startfree": "Start your 14 days free trial !",
+		"img_0": {
+			"title": "Desk booking in ",
+			"enhance": "2 clicks"
+		},
+		"img_1": {
+			"title": "Faster weekly ",
+			"enhance": "planning"
+		}
 	}
 	}
 }

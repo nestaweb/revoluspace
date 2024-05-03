@@ -1,4 +1,4 @@
-import ContactOK from "@/app/[locale]/contact-ok/ContactOK";
+import ContactMSteams from "@/app/[locale]/contact-msteams/ContactMSteams";
 import {unstable_setRequestLocale, getTranslations} from 'next-intl/server';
 import {NextIntlClientProvider, useMessages} from 'next-intl';
  
@@ -21,7 +21,7 @@ export default function Page({params: {locale}}: Props) {
 	const messages = useMessages();
 	return (
 		<NextIntlClientProvider locale={locale} messages={messages}>
-			<ContactOK locale={locale} />
+			<ContactMSteams locale={locale} />
 		</NextIntlClientProvider>
 	)
 }
