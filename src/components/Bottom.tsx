@@ -18,7 +18,7 @@ const Bottom: React.FC<IBottomProps> = ({ title, enhancedWords, noButtons, newsl
 
 	return (
 		<div className={`${className ? className : ""} flex flex-col items-center justify-center gap-12 w-[90vw] lg:w-4/6 mx-auto mt-[15vh] pb-[15vh]`}>
-			<h3 className='text-3xl lg:text-6xl font-semibold text-center '>{title} <span className='purple-gradient'>{enhancedWords}</span></h3>
+			<h3 className='text-3xl lg:text-6xl font-semibold text-center '>{title} <br/><span className='purple-gradient'>{enhancedWords}</span></h3>
 				{
 					!noButtons ?
 					<div className='flex flex-col gap-4'>

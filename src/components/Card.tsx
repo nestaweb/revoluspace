@@ -32,8 +32,8 @@ const PricingCard: React.FC<ICardProps> = ({ title, desc, className, price, feat
 		<div className={`w-full max-w-sm p-4 bg-brand-white ${!noborders ? "border border-gray-200" : ""} rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700 ${className ? className : ""}`}>
 			<h5 className="mb-4 text-xl font-medium text-gray-500 dark:text-gray-400">{title ? title : "Standard Plan"}</h5>
 			<div className="flex items-baseline text-gray-900 dark:text-brand-white">
-				<span className="text-3xl font-semibold text-brand-gray-500">{!seeSymbol ? "" : "€"}</span>
-				<span className="text-5xl font-extrabold tracking-tight text-brand-gray-500" >{price ? price : 0}</span>
+				<span className="text-3xl font-semibold text-brand-gray-500 dark:text-brand-white">{!seeSymbol ? "" : "€"}</span>
+				<span className="text-5xl font-extrabold tracking-tight text-brand-gray-500 dark:text-brand-white" >{price ? price : 0}</span>
 				<span className="ms-1 text-xl font-normal text-gray-500 dark:text-gray-400">{planFrequancy ? planFrequancy : ""}</span>
 			</div>
 			<p className='mt-[2vh] text-brand-gray-500 dark:text-brand-gray-200'>{desc}</p>
@@ -96,7 +96,7 @@ const TextCard: React.FC<ICardProps> = ({ title, desc, className }) => {
 	)
 }
 
-const VerCard: React.FC<ICardProps> = ({ title, desc, imgUrl, className, noImage, noborders }) => {
+const VerCard: React.FC<ICardProps> = ({ title, desc, imgUrl, className, noImage, noborders, gif }) => {
 	
 	const splittedTitle = title.split(' ');
 	const firstWord = splittedTitle.shift();
@@ -104,22 +104,23 @@ const VerCard: React.FC<ICardProps> = ({ title, desc, imgUrl, className, noImage
 
 	return (
 		<div className={`h-full max-w-sm bg-brand-white ${!noborders ? "border border-gray-200" : ""} rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 ${className ? className : ""}`}>
-			<div>
-				{
-				imgUrl && !noImage ?
+			{
+				imgUrl && !noImage && !gif ?
 					<Image
 						src={imgUrl}
-						width={300}
-						height={300}
+						width={700}
+						height={700}
 						className="w-full h-auto rounded-t-lg"
 						alt={title}
 					/>
 				:
+				imgUrl && !noImage && gif ?
+					<video className="w-full h-auto rounded-t-lg" src={imgUrl} loop muted autoPlay></video>
+				:
 				!noImage &&
 					<div className='min-h-[30vh] min-w-full rounded-t-lg bg-gradient-to-b from-brand-violet-700 to-brand-violet-100'></div>
 			}
-			</div>
-			<div className="p-5">
+			<div className="p-5 h-full">
 				<div>
 					<p className="text-center mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-brand-white"><span className='purple-gradient'>{firstWord}</span> {title}</p>
 				</div>
@@ -192,6 +193,7 @@ const Card: React.FC<ICardProps> = ({ title, desc, imgUrl, direction, className,
 				className={className}
 				noImage={noImage}
 				noborders={noborders}
+				gif={gif}
 			/>
 		:
 		style && style == 'pricing' ?

@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Script from 'next/script'
 import { NavBar, HeroHeader, Card, Accordion, Bottom, Footer, IntegrationButton, FadeInSection } from '@/components/components';
 import {useTranslations} from 'next-intl';
 import {unstable_setRequestLocale} from 'next-intl/server';
@@ -32,6 +33,7 @@ const Home: React.FC<IHome> = ({ locale }) => {
 
 	return (
 		<div className="max-w-[100vw] overflow-hidden dark:bg-gray-800">
+			
 			<div className="relative min-h-screen z-20">
 				<NavBar current='home' locale={locale} />
 				<FadeInSection>
@@ -75,7 +77,7 @@ const Home: React.FC<IHome> = ({ locale }) => {
 			</div>
 			<FadeInSection>
 			<Image 
-				src="/Demo MS Teams.svg"
+				src="/Demo MS Teams.png"
 				width={500}
 				height={500}
 				className="lg:w-4/6 w-5/6 h-auto mx-auto -translate-y-[5vh]"
@@ -128,15 +130,16 @@ const Home: React.FC<IHome> = ({ locale }) => {
 					<Card 
 						title={t('ver_cards.card_0.title')}
 						desc={t('ver_cards.card_0.details')}
-						imgUrl="/Demo MS Teams.svg"
+						imgUrl="/Refonte_Visuel_Partners.mp4"
 						style='vertical'
+						gif
 					/>
 				</FadeInSection>
 				<FadeInSection>
 					<Card 
 						title={t('ver_cards.card_1.title')}
 						desc={t('ver_cards.card_1.details')}
-						imgUrl="/Demo MS Teams.svg"
+						imgUrl="/Refonte_Visuel_SSO.png"
 						style='vertical'
 					/>
 				</FadeInSection>
@@ -144,7 +147,7 @@ const Home: React.FC<IHome> = ({ locale }) => {
 					<Card 
 						title={t('ver_cards.card_2.title')}
 						desc={t('ver_cards.card_2.details')}
-						imgUrl="/Demo MS Teams.svg"
+						imgUrl="/Refonte_Visuel_InvitationUsers.png"
 						style='vertical'
 					/>
 				</FadeInSection>
@@ -217,7 +220,7 @@ const Home: React.FC<IHome> = ({ locale }) => {
 				locale={locale}
 			/>
 			</FadeInSection>
-			<Footer/>
+			<Footer locale={locale} />
 		</div>
 	);
 }

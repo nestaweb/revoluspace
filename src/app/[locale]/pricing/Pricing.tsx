@@ -98,7 +98,7 @@ const Pricing: React.FC<IPricing> = ({ locale }) => {
 					seeSymbol
 					locale={locale}
 					IntegrationButtonText={t('add')}
-					IntegrationButtonLink={{ slack: ``, msteams: `/${locale}/msteams` }}
+					IntegrationButtonLink={{ slack: ``, msteams: `/${locale}/contact` }}
 				/>
 				</FadeInSection>
 				<FadeInSection>
@@ -122,7 +122,7 @@ const Pricing: React.FC<IPricing> = ({ locale }) => {
 				className="-translate-y-[15vh]"
 			/>
 			</FadeInSection>
-			<Footer/>
+			<Footer locale={locale}/>
 		</div>
 	)
 }

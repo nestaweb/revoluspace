@@ -71,7 +71,7 @@ const MSteams: React.FC<IMSteams> = ({ locale }) => {
 					<Card 
 						title={t('hor_cards.card_0.title')}
 						desc={t('hor_cards.card_0.description')}
-						imgUrl="/Demo MS Teams.svg"
+						imgUrl="/Refonte_Visuel_Gettogether.png"
 						style='vertical'
 					/>
 				</FadeInSection>
@@ -79,7 +79,7 @@ const MSteams: React.FC<IMSteams> = ({ locale }) => {
 					<Card 
 						title={t('hor_cards.card_1.title')}
 						desc={t('hor_cards.card_1.description')}
-						imgUrl="/Demo MS Teams.svg"
+						imgUrl="/Refonte_Visuel_OfficeManagement.png"
 						style='vertical'
 					/>
 				</FadeInSection>
@@ -87,7 +87,7 @@ const MSteams: React.FC<IMSteams> = ({ locale }) => {
 					<Card 
 						title={t('hor_cards.card_2.title')}
 						desc={t('hor_cards.card_2.description')}
-						imgUrl="/Demo MS Teams.svg"
+						imgUrl="/Refonte_Visuel_Downsize.png"
 						style='vertical'
 					/>
 				</FadeInSection>
@@ -101,9 +101,10 @@ const MSteams: React.FC<IMSteams> = ({ locale }) => {
 				<Card 
 					title={t('ver_cards.card_0.title')}
 					desc={t('ver_cards.card_0.description')}
-					imgUrl="/Demo MS Teams.svg"
+					imgUrl="/Revoluspace_MSTeams_Scheduling.jpg"
 					IntegrationButtonText='Learn More'
-					IntegrationButtonLink={{ slack: '/slack', msteams: '/msteams' }}
+					IntegrationButtonLink={{ slack: `/${locale}/slack`, msteams: `/${locale}/msteams` }}
+					noborders
 				/>
 				</FadeInSection>
 				<FadeInSection>
@@ -111,18 +112,19 @@ const MSteams: React.FC<IMSteams> = ({ locale }) => {
 					title={t('ver_cards.card_1.title')}
 					desc={t('ver_cards.card_1.description')}
 					direction="reverse"
-					imgUrl="/Demo MS Teams.svg"
+					imgUrl="/RevoluspaceMSTeamsDeskBooking.jpg"
 					IntegrationButtonText='Learn More'
-					IntegrationButtonLink={{ slack: '/slack', msteams: '/msteams' }}
+					IntegrationButtonLink={{ slack: `/${locale}/slack`, msteams: `/${locale}/msteams` }}
 				/>
 				</FadeInSection>
 				<FadeInSection>
 				<Card 
 					title={t('ver_cards.card_2.title')}
 					desc={t('ver_cards.card_2.description')}
-					imgUrl="/Demo MS Teams.svg"
+					imgUrl="/Revoluspace_Analytics.png"
 					IntegrationButtonText='Learn More'
-					IntegrationButtonLink={{ slack: '/slack', msteams: '/msteams' }}
+					IntegrationButtonLink={{ slack: `/${locale}/slack`, msteams: `/${locale}/msteams` }}
+					noborders
 				/>
 				</FadeInSection>
 			</div>
@@ -131,7 +133,7 @@ const MSteams: React.FC<IMSteams> = ({ locale }) => {
 				<p className="text-3xl lg:text-5xl text-center font-semibold mt-[20vh] lg:mt-[25vh] mb-[15vh] w-5/6 mx-auto">{t('manageyourflexible.title')}<span className='purple-gradient'>{t('manageyourflexible.enhance')}</span></p>
 				</FadeInSection>
 				<FadeInSection>
-				<div className="flex flex-wrap mx-auto justify-center gap-3">
+				<div className="grid grid-cols-3 mx-auto justify-center gap-3">
 					<Card 
 						title={t('gallerycards.card_0.title')}
 						desc={t('gallerycards.card_0.description')}
@@ -179,8 +181,8 @@ const MSteams: React.FC<IMSteams> = ({ locale }) => {
 			</div>
 			<FadeInSection>
 			<div className='w-5/6 lg:w-[90vw] mx-auto flex flex-col gap-y-[5vh] mt-[10vh] lg:mt-[15vh]'>
-				<p className='text-3xl lg:text-5xl font-semibold text-center'>{t('faqs.tagline.title')}<br/><span className='purple-gradient capitalize'>{t('faqs.tagline.enhance')}</span></p>
-				<p className='text-center'>{t('faqs.details')}</p>
+				<p className='text-3xl lg:text-5xl font-semibold text-center'>{t('faqs.tagline.title')}<span className='purple-gradient capitalize'>{t('faqs.tagline.enhance')}</span></p>
+				<p className='text-center w-4/6 mx-auto'>{t('faqs.details.title')}<br/>{t('faqs.details.below')}</p>
 				<Accordion 
 					qa={faqs}
 				/>
@@ -193,7 +195,7 @@ const MSteams: React.FC<IMSteams> = ({ locale }) => {
 				locale={locale}
 			/>
 			</FadeInSection>
-			<Footer/>
+			<Footer locale={locale}/>
 		</div>
 	)
 }

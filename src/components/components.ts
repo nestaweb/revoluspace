@@ -1,6 +1,7 @@
 import Accordion from "@/components/Accordion";
 import Bottom from "@/components/Bottom";
 import Card from "@/components/Card";
+import Crisp from "@/components/Crisp";
 import Demo from "@/components/Demo";
 import Footer from "@/components/Footer";
 import HeroHeader from "@/components/HeroHeader";
@@ -14,6 +15,7 @@ export {
 	Accordion,
 	Bottom,
 	Card,
+	Crisp,
 	Demo,
 	FadeInSection,
 	Footer,

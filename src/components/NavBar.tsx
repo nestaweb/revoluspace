@@ -38,17 +38,17 @@ const NavBar: React.FC<INavBarProps> = ({ current, locale }) => {
 				<div className="flex md:order-2 gap-x-4 w-[40vw] lg:w-[20vw] justify-end lg:justify-center items-center">
 					<p className='flex gap-2 relative z-40'>
 						<Link href={`/fr/${current == "home" ? "" : current}`} locale="fr">
-							<button className={`${locale == "fr" ? "font-semibold" : "font-light hover:text-brand-violet-700"} ease-in-out duration-200 text-brand-gray-500`}>Fr</button>
+							<button className={`${locale == "fr" ? "font-semibold" : "font-light hover:text-brand-violet-700"} ease-in-out duration-200 text-brand-gray-500 dark:text-brand-white`}>Fr</button>
 						</Link>
 						|
 						<Link href={`/en/${current == "home" ? "" : current}`} locale="en">
-							<button className={`${locale == "en" ? "font-semibold" : "font-light hover:text-brand-violet-700"} ease-in-out duration-200 text-brand-gray-500`}>En</button>
+							<button className={`${locale == "en" ? "font-semibold" : "font-light hover:text-brand-violet-700"} ease-in-out duration-200 text-brand-gray-500 dark:text-brand-white`}>En</button>
 						</Link>
 					</p>
 					{
 						!isPhone ?
 						<Link href={`/${locale}/contact`} >
-							<button type="button" className="text-brand-white bg-brand-violet-700 hover:bg-violet-800 focus:outline-none font-medium rounded-full text-sm px-4 py-3 text-center dark:bg-violet-600 dark:hover:bg-brand-violet-700 ease-in-out duration-200">{t('navigation.bookademo')}</button>
+							<button type="button" className="bg-brand-violet-700 text-brand-white hover:bg-brand-violet-700/90 dark:hover:bg-brand-violet-700/70 border-brand-violet-700 flex items-center gap-2 border-2 focus:outline-none font-medium text-base px-4 py-2 text-center  rounded-full ease-in-out duration-200">{t('navigation.bookademo')}</button>
 						</Link>
 						:
 						<>

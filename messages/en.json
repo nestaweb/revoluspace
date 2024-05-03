@@ -137,14 +137,14 @@
 		"seo": {
 		  "title": "Revoluspace | Seamless desk booking with Microsoft Teams integration",
 		  "description":
-			"Enhance collaboration and streamline office management with our Microsoft Teams Desk Booking integration. Optimize workspace utilization, reduce costs, and boost productivity in your hybrid workplace"
+			"Enhance collaboration and streamline office management with our Microsoft Teams Desk Booking integration. Optimize workspace utilization, reduce costs, and boost productivity in your hybrid workplace."
 		},
 		"tagline": {
 			"title": "Seamless desk booking with ",
 			"enhance": "Microsoft Teams integration"
 		},
 		"details":
-		  "Enhance collaboration and streamline office management with our Microsoft Teams Desk Booking integration. Optimize workspace utilization, reduce costs, and boost productivity in your hybrid workplace",
+		  "Enhance collaboration and streamline office management with our Microsoft Teams Desk Booking integration. Optimize workspace utilization, reduce costs, and boost productivity in your hybrid workplace.",
 		
 		"advantages" : {
 			"title": "The advantages of our ",
@@ -217,7 +217,11 @@
 				"title": "Frequently Asked Questions about ",
 				"enhance": "MS Teams integration"
 			},
-			"details" : "Do you have questions about our remote work and flex office management software? Find some answers below",
+			"details": 
+			{
+				"title": "Do you have questions about our remote work and flex office management software?",
+				"below": "Find some answers below."
+			},
 			"qa": {
 				"qa_0":{
 					"question": "What is a desk booking system integrated into MS Teams app?",
@@ -324,7 +328,11 @@
 				"title": "Frequently Asked Questions about ",
 				"enhance": "Slack integration"
 			},
-			"details" : "Do you have questions about our remote work and flex office management software? Find some answers below",
+			"details": 
+			{
+				"title": "Do you have questions about our remote work and flex office management software?",
+				"below": "Find some answers below."
+			},
 			"qa": {
 				"qa_0":{
 					"question": "What is a desk booking system integrated into Slack app?",
@@ -481,9 +489,24 @@
 			"enhance": "Get Started"
 		},
 		"seo": {
-		  "title": "Revoluspace | Contact-us"
+		  "title": "Revoluspace | Contact-us",
+		  "description": "Do you have a technical problem? Would you like to give us feedback on a beta feature? Need details on our business plan? Don't hesitate to contact us"
 		},
 		"details": "Got a technical issue? Want to send feedback about a beta feature? Need details about our Business plan? Let us know."
-	  }
+	  },
+	  "contact-ok": {
+		"tagline": {
+			"title": "Your form has been submitted",
+			"enhance": ""
+		},
+		"details": "Thank you for contacting us, our team will get back to you shortly."
+	},
+	"contact-msteams": {
+		"tagline": {
+			"title": "Get started free ",
+			"enhance": "now!"
+		},
+		"details": "Get started in as little as 5 minutes"
+	}
 	}
 }
